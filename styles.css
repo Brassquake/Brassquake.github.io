@@ -145,14 +145,18 @@ h2::after {
 }
 
 /* Member cards */
-.members-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+#members-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
     gap: 2rem;
     margin-top: 2rem;
 }
 
 .member-card {
+    width: 30%;
     background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 107, 53, 0.1));
     border-radius: 15px;
     padding: 1.5rem;
@@ -261,7 +265,7 @@ footer {
         gap: 1rem;
     }
 
-    .members-grid {
+    #members-grid {
         grid-template-columns: 1fr;
     }
 

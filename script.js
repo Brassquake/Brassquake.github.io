@@ -96,8 +96,8 @@ let cards = [
 
 function makeCards() {
     for (let i = 0; i < cards.length; i++) {
-        document.querySelector('.members-grid').insertAdjacentHTML('beforeend', `
-            <div class="member-card" onclick="showMemberDetail('${cards[i].name.toLowerCase().replace(/\s+/g, '-')}')">
+        document.querySelector('#members-grid').insertAdjacentHTML('beforeend', `
+            <div class="member-card" onclick="changePage('page=member-detail-page&member=${cards[i].name.toLowerCase().replace(/\s+/g, '-')}')">
                 <span class="instrument-icon">🎺</span>
                 <div class="member-name">${cards[i].name}</div>
                 <div class="member-instrument">${cards[i].instrument}</div>
@@ -109,15 +109,22 @@ function makeCards() {
 
 function memberDetails() {
     for (let i = 0; i < cards.length; i++) {
-        document.querySelector('.member-detail-page').insertAdjacentHTML('beforeend', `
+        document.querySelector('#member-detail-page').insertAdjacentHTML('beforeend', `
             <section id="${cards[i].name.toLowerCase().replace(/\s+/g, '-')}-detail" class="section hidden">
                 <div class="member-detail">
-                    <a href="#" class="back-button" onclick="showSection('members')">← Back to Members</a>
+                    <a href="#" class="back-button" onclick="changePage('page=members')">← Back to Members</a>
                     <span class="instrument-icon">${cards[i].icon}</span>
                     <h2>${cards[i].name}</h2>
                     <div class="member-instrument">${cards[i].instrument}</div>
                     <br>
-                    <p>${cards[i].detailedDesc}</p>
+                    <div style="display: flex; flex-direction: row; gap: 20px; align-items: center;">
+                        <div class="image-container" style="width: 50%; text-align: center; margin: 0 100px;">
+                            <img src="images/${cards[i].img}" alt="${cards[i].name}" style="width: 100%; height: auto;">
+                        </div>
+                        <div class="member-detailed-description"style="width: 50%; text-align: left; display: flex; flex-direction: column; align-items: center;">
+                            <p>${cards[i].detailedDesc}</p>
+                        </div>
+                    </div>
                 </div>
             </section>
         `);
