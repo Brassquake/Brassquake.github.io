@@ -33,69 +33,33 @@ let cards = [
         instrument: "Trumpet",
         icon: "🎺",
         desc: "Trumpet player, bugle horn player, valve trombone player, tuba player, alto sax player etc. he basically plays everything.",
-        detailedDesc: `<p>As our first trumpet, this talented musician leads Brassquake with brilliant technique and musical leadership. Responsible for carrying the main melodic lines and soaring high notes, they bring both precision and artistry to every performance.</p>
-                    <br>
-                    <p>With years of practice and dedication, our first trumpet has developed the skills necessary to handle the demanding repertoire of brass quintet literature, from baroque classics to contemporary works.</p>
-                    <br>
-                    <p><strong>Musical Journey:</strong> Started playing trumpet in elementary school and has been an active member of various ensembles at Dr. G.W. Williams S.S.</p>
-                    <br>
-                    <p><strong>Favorite Pieces:</strong> Classical trumpet concertos and modern film score arrangements</p>`
+        Detaileddesc: "",
     },
     {
         name: "Alex Uchida",
         img: "",
         instrument: "Trumpet",
         icon: "🎺",
-        desc: "Providing harmonic support and countermelodies, our second trumpet adds depth and richness to our brass sound.",
-        detailedDesc: `<p>Our second trumpet is an essential voice in the Brassquake quintet, providing crucial harmonic support and beautiful countermelodies. This role requires excellent listening skills and the ability to blend seamlessly with the ensemble.</p>
-                <br>
-                <p>While supporting the first trumpet, our second trumpet also takes on important solo passages and helps create the rich, full sound that defines our group's character.</p>
-                <br>
-                <p><strong>Musical Journey:</strong> A dedicated musician with a passion for ensemble playing and collaborative music-making</p>
-                <br>
-                <p><strong>Favorite Pieces:</strong> Brass quintet arrangements of popular songs and jazz standards</p>`
-    },
     {
         name: "Arwen Leong",
         img: "",
         instrument: "French Horn",
-        icon: "🎺",
-        desc: "The heart of our quintet, bridging the gap between high and low voices with warm, lyrical horn melodies.",
-        detailedDesc: `<p>The French horn is often considered the most challenging brass instrument, and our horn player rises to meet that challenge with grace and skill. Serving as the bridge between the high trumpets and low brass, the horn adds warmth and lyrical beauty to our sound.</p>
-                    <br>
-                    <p>From hunting calls to romantic melodies, our French horn player brings versatility and musicality to every piece Brassquake performs.</p>
-                    <br>
-                    <p><strong>Musical Journey:</strong> Drawn to the French horn's unique voice and challenging technique</p>
-                    <br>
-                    <p><strong>Favorite Pieces:</strong> Romantic era compositions and film scores that showcase the horn's lyrical capabilities</p>`
-    },
-    {
-        name: "Nancy Qiu",
-        img: "",
-        instrument: "Trombone",
-        icon: "🎺",
-        desc: "Delivering powerful bass lines and smooth glissandos, our trombonist provides the foundation for our ensemble.",
-        detailedDesc: `<p>Our trombonist brings both power and finesse to Brassquake, mastering the unique slide technique that makes the trombone so distinctive. From smooth legato passages to punchy rhythmic figures, they add versatility to our ensemble.</p>
-                    <br>
-                    <p>The trombone's ability to play both bass and tenor lines makes our trombonist an invaluable member of the quintet, often providing crucial harmonic support and occasional melodic features.</p>
-                    <br>
-                    <p><strong>Musical Journey:</strong> Loves the trombone's expressive capabilities and its role in various musical styles</p>
-                    <br>
-                    <p><strong>Favorite Pieces:</strong> Jazz arrangements and pieces that feature the trombone's slide techniques</p>`
+        icon: "",
+        desc: 
+    
     },
     {
         name: "Brian Weng",
         img: "",
+        instrument: "Trombone",
+        icon: "🎺",
+        desc: "Can't find 5th position",
+    },
+    {
+        name: "Nancy Qiu",
+        img: "",
         instrument: "Tuba",
         icon: "🎺",
-        desc: "The foundation of Brassquake! Our tuba player provides the deep, resonant bass that makes our music truly earthquake-worthy.",
-        detailedDesc: `<p>The foundation of Brassquake! Our tuba player provides the deep, resonant bass lines that give our quintet its solid foundation. Despite being the largest and lowest instrument, the tuba can be surprisingly agile and expressive in the right hands.</p>
-                    <br>
-                    <p>From steady bass lines that anchor the harmony to surprising melodic moments, our tuba player proves that the biggest instrument can have the biggest impact on our sound.</p>
-                    <br>
-                    <p><strong>Musical Journey:</strong> Embraced the challenge of mastering the largest brass instrument</p>
-                    <br>
-                    <p><strong>Favorite Pieces:</strong> Pieces that showcase the tuba's surprising agility and melodic capabilities</p>`
     }
 ];
 
