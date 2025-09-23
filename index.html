@@ -15,6 +15,7 @@
     <header>
         <div class="logo">Brassquake</div>
         <div class="subtitle">Brass Quintet • Dr. G.W. Williams S.S.</div>
+        <hr>
         <nav>
             <ul>
                 <li><a href="#" onclick="showSection('home')">Home</a></li>
@@ -125,14 +126,6 @@
                 // Show the member detail
                 detailSection.classList.remove('hidden');
             }
-        }
-
-        function updateActiveNav(activeSection) {
-            const navLinks = document.querySelectorAll('nav a');
-            navLinks.forEach(link => {
-                link.style.background = 'rgba(255, 255, 255, 0.1)';
-                link.style.borderColor = 'transparent';
-            });
         }
 
         // Create floating musical notes
