@@ -25,6 +25,7 @@ let cards = [
     {
         name: "Brassquake",
         img: "Logo Circle.png",
+        instrument: "",
         desc: "Brassquake is a brass quintet that is composed of talented musicians.",
     },
     {
