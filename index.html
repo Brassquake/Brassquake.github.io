@@ -96,6 +96,15 @@
             showSection('home');
         });
 
+        document.querySelectorAll("nav a").forEach(link => {
+            link.addEventListener('click', function(e) {
+                document.querySelectorAll("nav a").forEach(navLink => {
+                    navLink.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+
         // Navigation functions
         function showSection(sectionName) {
             // Hide all sections
@@ -109,9 +118,6 @@
             if (targetSection) {
                 targetSection.classList.remove('hidden');
             }
-            
-            // Update active navigation
-            updateActiveNav(sectionName);
         }
 
         function showMemberDetail(memberName) {

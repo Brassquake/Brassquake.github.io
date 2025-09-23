@@ -96,8 +96,12 @@ nav a {
 }
 
 nav a:hover {
-    background: rgba(255, 221, 0, 0.8);
+    background: rgba(255, 221, 0, 0.6);
     transform: translateY(-2px);
+}
+
+nav a.active {
+    background: rgba(255, 217, 0, 0.6);
 }
 
 /* Main content */
