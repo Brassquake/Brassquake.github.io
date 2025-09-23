@@ -23,6 +23,11 @@ window.addEventListener('resize', realignText);
 
 let cards = [
     {
+        name: "Brassquake",
+        img: "Logo Circle.png",
+        desc: "Brassquake is a brass quintet that is composed of talented musicians.",
+    },
+    {
         name: "Arvin Omidvar",
         img: "arvino.jpg",
         instrument: "Trumpet",
