@@ -27,8 +27,9 @@ let cards = [
         img: "Logo Circle.png",
         instrument: "",
         icon:"",
-        desc: "Brass quintet"
-        detailedDesc: `<p> </p> 
+        desc: "Brass quintet",
+        detailedDesc: `<p> </p>`,
+    },
     {
         name: "Arvin Omidvar",
         img: "arvino.jpg",
