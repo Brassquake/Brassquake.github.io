@@ -1,61 +1,72 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #1e1e1eff; /*black*/
+    background: #1e1e1eff;
+    /*black*/
     color: white;
     margin: 0;
     padding: 0;
 }
 
-a{
-    color:aqua;
+a {
+    color: aqua;
 }
 
-.container{
-    width:90%;
-    overflow: hidden;
-    margin: 10px auto;
-    padding:10px;
-
-}
-.container ul{
-    padding:0px;
-    margin: 0px;
+header {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
-.container ul li{
-    list-style: none;
 
-    float: left;
-    width:25%;
+.container {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    margin: 0 auto;
+    width: 90%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: 25%;
     min-height: 500px;
-    background:#392aa1ff; /*blue*/ 
+    
     margin: 15px;
     padding: 20px;
+    border-radius: 15px;
+    
     text-align: center;
+    background: #392aa1ff;
 }
-.container ul li h2{
-    margin: 0 0 100px 0;
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    list-style: none;
+
+    padding: 20px;
+
+}
+.card-content h2{
+    margin-bottom: 100px;
 }
 
 
-img{
-    width:50%;
+img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
     height: auto;
 }
-.image-text {
-    display: flex;         /* Make image and text sit side-by-side */
-    align-items: space-around;   /* Vertically center them */
+
+/**/
+
+footer{
+    margin: 50px; 
 }
-
-.image-text p {
-    color: white;          /* Make the text white */
-    font-size: 16px;       /* Set text size */
-    margin: 0;             /* Remove extra space around the paragraph */
-    line-height: 1.4;      /* Make lines spaced nicely */
-    padding:20px;
-}
-
-
-
