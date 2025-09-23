@@ -54,7 +54,7 @@ let cards = [
         name: "Arwen Leong",
         img: "",
         instrument: "French Horn",
-        icon: "🎺",
+        icon: "📯",
         desc: "The heart of our quintet, bridging the gap between high and low voices with warm, lyrical horn melodies.",
         detailedDesc: `<p>The French horn is often considered the most challenging brass instrument, and our horn player rises to meet that challenge with grace and skill. Serving as the bridge between the high trumpets and low brass, the horn adds warmth and lyrical beauty to our sound.</p>
                     <br>
@@ -82,7 +82,7 @@ let cards = [
         name: "Nancy Qiu",
         img: "",
         instrument: "Tuba",
-        icon: "🎺",
+        icon: "",
         desc: "The foundation of Brassquake! Our tuba player provides the deep, resonant bass that makes our music truly earthquake-worthy.",
         detailedDesc: `<p>The foundation of Brassquake! Our tuba player provides the deep, resonant bass lines that give our quintet its solid foundation. Despite being the largest and lowest instrument, the tuba can be surprisingly agile and expressive in the right hands.</p>
                     <br>
