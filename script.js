@@ -38,7 +38,7 @@ let cards = [
     },
     {
         name: "Alex Uchida",
-        img: "",
+        img: "alex.jpeg",
         instrument: "Trumpet",
         icon: "🎺",
         desc: "Providing harmonic support and countermelodies, our second trumpet adds depth and richness to our brass sound.",
