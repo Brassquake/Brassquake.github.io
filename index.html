@@ -13,7 +13,8 @@
     <div class="music-notes"></div>
 
     <header>
-        <nav>
+        <button style="float: left;margin: 20px 20px 100px;"onclick="document.querySelector('nav').classList.toggle('open')">=</button>
+        <nav class="open">
             <ul>
                 <li><a href="#" onclick="changePage('page=home')">Home</a></li>
                 <li><a href="#" onclick="changePage('page=about')">About</a></li>
@@ -21,7 +22,7 @@
                 <li><a href="#" onclick="changePage('page=contact')">Contact</a></li>
             </ul>
         </nav>
-        <div class="logo">Brassquake</div>
+        <div class="logo" style="clear:left;">Brassquake</div>
         <div class="subtitle">Brass Quintet • Dr. G.W. Williams S.S.</div>
     </header>
 
