@@ -37,7 +37,7 @@ let cards = [
     },
     {
         name: "Alex Uchida",
-        img: "",
+        img: "alex.jpg",
         instrument: "Trumpet",
         icon: "🎺",
     {
