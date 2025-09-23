@@ -65,7 +65,7 @@ let cards = [
                     <p><strong>Favorite Pieces:</strong> Romantic era compositions and film scores that showcase the horn's lyrical capabilities</p>`
     },
     {
-        name: "Nancy Qiu",
+        name: "Brian Weng",
         img: "",
         instrument: "Trombone",
         icon: "🎺",
@@ -79,7 +79,7 @@ let cards = [
                     <p><strong>Favorite Pieces:</strong> Jazz arrangements and pieces that feature the trombone's slide techniques</p>`
     },
     {
-        name: "Brian Weng",
+        name: "Nancy Qiu",
         img: "",
         instrument: "Tuba",
         icon: "🎺",
