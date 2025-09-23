@@ -10,10 +10,15 @@ body {
     color: #fff;
     overflow-x: hidden;
     min-height: 100vh;
+    line-height: 1.6;
 }
 
 hr{
     margin: 50px;
+}
+
+main{
+    margin: 100px 0 300px;
 }
 
 /* Animated background elements */

@@ -133,3 +133,44 @@ function memberDetails() {
 
 makeCards();
 memberDetails();
+
+// Smooth scrolling for navigation
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+});
+
+// Create floating musical notes
+function createFloatingNotes() {
+    const notesContainer = document.querySelector('.music-notes');
+    const notes = ['♪', '♫', '♬', '♩', '♭', '♯', '𝄞'];
+    
+    for (let i = 0; i < 15; i++) {
+        const note = document.createElement('div');
+        note.className = 'note';
+        note.textContent = notes[Math.floor(Math.random() * notes.length)];
+        note.style.left = Math.random() * 100 + '%';
+        note.style.top = Math.random() * 100 + '%';
+        note.style.animationDelay = Math.random() * 6 + 's';
+        note.style.fontSize = (Math.random() * 1.5 + 1.5) + 'rem';
+        notesContainer.appendChild(note);
+    }
+}
+
+// Add some interactive effects
+document.querySelectorAll('.member-card').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-10px) scale(1.02)';
+    });
+    
+    card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0) scale(1)';
+    });
+});
+
+// Initialize the page
+document.addEventListener('DOMContentLoaded', function() {
+    createFloatingNotes();
+    updatePage();
+});

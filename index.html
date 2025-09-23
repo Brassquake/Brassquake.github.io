@@ -72,10 +72,10 @@
                     <br>
                     <p>E-mail:</p>
                     <p>brassquakegw@gmail.com</p>
-                    <a style="color: white;" href="https://www.instagram.com/brassquake?igsh=OGw0cXkyOG1xamZ2" target="_blank"
-                    title="Instagram">Instagram</a>
-                    <a style="color: white;" href="https://www.youtube.com/@Brassquake" target="_blank" title=YouTube">YouTube</a>
-                    <br>
+
+                    <ul id="contacts-list" style="list-style: none;">
+                    </ul>
+                    
                     <p><strong>School:</strong> <span class="school-name">Dr. G.W. Williams Secondary School</span></p>
                     <p><strong>Location:</strong> Aurora, Ontario</p>   
                 </div>
@@ -85,132 +85,20 @@
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2024 Brassquake | Dr. G.W. Williams Secondary School</p>
+            <p>&copy; <span id="current-year"></span> Brassquake | Dr. G.W. Williams Secondary School</p>
             <p>Making musical earthquakes, one performance at a time! 🎺</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Footer Scripts -->
     <script>
-        let page = "home";
-        const url = new URLSearchParams(window.location.search);
-        
-        function changePage(section) {
-            if(section !== "") {
-                //Update URL without reloading
-                window.location.search = section;
-                window.history.pushState({}, '', `${window.location.pathname}?${url}`);
-            }
-            updatePage();
-        }
-
-        function updatePage() {
-            //Clear all sections
-            document.querySelectorAll('.section').forEach(sec => sec.classList.add('hidden'));
-            page = url.get('page') || 'home';
-
-            document.getElementById(page).classList.remove('hidden');
-            if(page === 'member-detail-page' && url.get('member')) {
-                document.getElementById(`${url.get("member")}-detail`).classList.remove('hidden');
-                console.log("hi");
-            }
-        }
-
-        // Initialize the page
-        document.addEventListener('DOMContentLoaded', function() {
-            createFloatingNotes();
-            updatePage();
-        });
-
-        //Turns button to active class when clicked
-        document.querySelectorAll("nav a").forEach(link => {
-            link.addEventListener('click', function(e) {
-                document.querySelectorAll("nav a").forEach(navLink => {
-                    navLink.classList.remove('active');
-                });
-                this.classList.add('active');
-            });
-        });
-
-        function showMemberDetail(memberName) {
-            const detailSection = document.getElementById(memberName + '-detail');
-            if (detailSection) {
-                // Hide all sections
-                const sections = document.querySelectorAll('.section');
-                sections.forEach(section => {
-                    section.classList.add('hidden');
-                });
-                
-                // Show the member detail
-                detailSection.classList.remove('hidden');
-            }
-        }
-
-        // Create floating musical notes
-        function createFloatingNotes() {
-            const notesContainer = document.querySelector('.music-notes');
-            const notes = ['♪', '♫', '♬', '♩', '♭', '♯', '𝄞'];
-            
-            for (let i = 0; i < 15; i++) {
-                const note = document.createElement('div');
-                note.className = 'note';
-                note.textContent = notes[Math.floor(Math.random() * notes.length)];
-                note.style.left = Math.random() * 100 + '%';
-                note.style.top = Math.random() * 100 + '%';
-                note.style.animationDelay = Math.random() * 6 + 's';
-                note.style.fontSize = (Math.random() * 1.5 + 1.5) + 'rem';
-                notesContainer.appendChild(note);
-            }
-        }
-
-        // Add some interactive effects
-        document.querySelectorAll('.member-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-10px) scale(1.02)';
-            });
-            
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
-            });
-        });
-
-        // Smooth scrolling for navigation
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-            });
-        });
-
-        /* 
-        ===========================================
-        INTERNAL JAVASCRIPT SECTION
-        ===========================================
-        Add your custom JavaScript code below this line
-        */
-        
-        // Your custom JavaScript will go here
-        // Example: Additional animations, form handling, API calls, etc.
-        
-        /*
-        Example functions you might want to add:
-        
-        function addPerformanceSchedule() {
-            // Add performance dates and events
-        }
-        
-        function loadMemberPhotos() {
-            // Load actual member photos
-        }
-        
-        function createAudioPlayer() {
-            // Add audio samples of performances
-        }
-        
-        function setupContactForm() {
-            // Handle contact form submissions
-        }
-        */
-        
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
+
+    <!-- Initialization -->
+    <script src="init.js"></script>
+    <script src="index.js"></script>
+    <script src="contacts.js"></script>
 </body>
 </html>
