@@ -142,11 +142,12 @@ function makePerformances() {
     for (let i = 0; i < performances.length; i++) {
         document.querySelector('#performance-grid').insertAdjacentHTML('beforeend', `
             <section id="performance-${i}" class="section">
-                <div class="member-detail">
-                    <h2>${performances[i].date}</h2>
-                    <div class="member-instrument">${performances[i].location}</div>
+                <div class="performance-details" style="text-align: center;">
+                    <img src="images/performance-${i}.jpg" alt="Performance ${i + 1}" style="height: 50%;">
+                    <h2>${performances[i].location}</h2>
+                    <div class="member-instrument">${performances[i].date}</div>
                     <br>
-                    <div style="display: flex; flex-direction: row; gap: 20px; align-items: center;">
+                    <p>${performances[i].details || 'Details coming soon!'}</p>
                 </div>
             </section>
         `);
