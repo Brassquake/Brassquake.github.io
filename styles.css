@@ -43,6 +43,7 @@ button:hover{
     font-style: italic;
 }
 
+/* Image border styling */
 .member-image{
     border: 50px solid transparent;
     border-image: url(images/border.png) 25 30 repeat;
