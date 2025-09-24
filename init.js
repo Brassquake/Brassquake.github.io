@@ -98,7 +98,7 @@ function makeCards() {
     for (let i = 0; i < cards.length; i++) {
         document.querySelector('#members-grid').insertAdjacentHTML('beforeend', `
             <div class="member-card" onclick="changePage('page=member-detail-page&member=${cards[i].name.toLowerCase().replace(/\s+/g, '-')}')">
-                <span class="instrument-icon">🎺</span>
+                <span class="instrument-icon">${cards[i].icon}</span>
                 <div class="member-name">${cards[i].name}</div>
                 <div class="member-instrument">${cards[i].instrument}</div>
                 <div class="member-description">${cards[i].desc}</div>
