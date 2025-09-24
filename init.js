@@ -28,17 +28,17 @@ let cards = [
         instrument: "Trumpet",
         icon: "🎺",
         desc: "Trumpet player, bugle horn player, valve trombone player, tuba player, alto sax player etc. he basically plays everything.",
-        detailedDesc: `<p>As our first trumpet, this talented musician leads Brassquake with brilliant technique and musical leadership. Responsible for carrying the main melodic lines and soaring high notes, they bring both precision and artistry to every performance.</p>
+        detailedDesc: `<p>Excellent preformer with crazy range. </p>
                     <br>
-                    <p>With years of practice and dedication, our first trumpet has developed the skills necessary to handle the demanding repertoire of brass quintet literature, from baroque classics to contemporary works.</p>
+                    <p>Always in the trenches</p>
                     <br>
-                    <p><strong>Musical Journey:</strong> Started playing trumpet in elementary school and has been an active member of various ensembles at Dr. G.W. Williams S.S.</p>
+                    <p></p>
                     <br>
-                    <p><strong>Favorite Pieces:</strong> Classical trumpet concertos and modern film score arrangements</p>`
+                    <p></p>`
     },
     {
         name: "Alex Uchida",
-        img: "alex.jpeg",
+        img: "alex.JPEG",
         instrument: "Trumpet",
         icon: "🎺",
         desc: "Providing harmonic support and countermelodies, our second trumpet adds depth and richness to our brass sound.",
@@ -52,9 +52,9 @@ let cards = [
     },
     {
         name: "Arwen Leong",
-        img: "",
+        img: "arwen.jpg",
         instrument: "French Horn",
-        icon: "🎺",
+        icon: "📯",
         desc: "The heart of our quintet, bridging the gap between high and low voices with warm, lyrical horn melodies.",
         detailedDesc: `<p>The French horn is often considered the most challenging brass instrument, and our horn player rises to meet that challenge with grace and skill. Serving as the bridge between the high trumpets and low brass, the horn adds warmth and lyrical beauty to our sound.</p>
                     <br>
@@ -82,7 +82,7 @@ let cards = [
         name: "Nancy Qiu",
         img: "",
         instrument: "Tuba",
-        icon: "🎺",
+        icon: "",
         desc: "The foundation of Brassquake! Our tuba player provides the deep, resonant bass that makes our music truly earthquake-worthy.",
         detailedDesc: `<p>The foundation of Brassquake! Our tuba player provides the deep, resonant bass lines that give our quintet its solid foundation. Despite being the largest and lowest instrument, the tuba can be surprisingly agile and expressive in the right hands.</p>
                     <br>

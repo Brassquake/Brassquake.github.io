@@ -1,8 +1,8 @@
 let contacts = [
     {
         method: "Email: brassquakegw@gmail.com",
-        url: "",
-        icon: "images/email.png"
+        url: "mailto:brassquake@gmail.com",
+        icon: "images/Email.png"
     },
     {
         method: "YouTube",
