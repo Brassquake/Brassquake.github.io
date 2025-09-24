@@ -1,6 +1,7 @@
 let contacts = [
     {
         method: "Email: brassquakegw@gmail.com",
+        url: "mailto:brassquake@gmail.com",
         icon: "images/Email.png"
     },
     {
