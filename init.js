@@ -28,7 +28,7 @@ let cards = [
         instrument: "Trumpet",
         icon: "🎺",
         desc: "Trumpet player, bugle horn player, valve trombone player, tuba player, alto sax player etc. he basically plays everything.",
-        detailedDesc: `<p>Excellant preformer with crazy range. </p>
+        detailedDesc: `<p>Excellent preformer with crazy range. </p>
                     <br>
                     <p>Always in the trenches</p>
                     <br>
