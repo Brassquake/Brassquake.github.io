@@ -82,7 +82,7 @@ let cards = [
         name: "Nancy Qiu",
         img: "",
         instrument: "Tuba",
-        icon: "",
+        icon: "🎺",
         desc: "The foundation of Brassquake! Our tuba player provides the deep, resonant bass that makes our music truly earthquake-worthy.",
         detailedDesc: `<p>The foundation of Brassquake! Our tuba player provides the deep, resonant bass lines that give our quintet its solid foundation. Despite being the largest and lowest instrument, the tuba can be surprisingly agile and expressive in the right hands.</p>
                     <br>
