@@ -96,8 +96,8 @@ let cards = [
 
 let performances = [
     {
-        date: "6767-67-67",
-        location: "Somewhere, Earth",
+        date: "July 26th, 2025",
+        location: "Aurora Town Square",
     }
 ];
 
