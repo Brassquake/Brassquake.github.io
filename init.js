@@ -66,7 +66,7 @@ let cards = [
     },
     {
         name: "Brian Weng",
-        img: "",
+        img: "BrianImage.JPG",
         instrument: "Trombone",
         icon: "🎺",
         desc: "Delivering powerful bass lines and smooth glissandos, our trombonist provides the foundation for our ensemble.",
