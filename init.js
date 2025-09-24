@@ -94,6 +94,13 @@ let cards = [
     }
 ];
 
+let performances = [
+    {
+        date: "6767-67-67",
+        location: "Somewhere, Earth",
+    }
+];
+
 function makeCards() {
     for (let i = 0; i < cards.length; i++) {
         document.querySelector('#members-grid').insertAdjacentHTML('beforeend', `
@@ -131,9 +138,24 @@ function memberDetails() {
     }
 }
 
+function makePerformances() {
+    for (let i = 0; i < performances.length; i++) {
+        document.querySelector('#performance-grid').insertAdjacentHTML('beforeend', `
+            <section id="performance-${i}" class="section">
+                <div class="member-detail">
+                    <h2>${performances[i].date}</h2>
+                    <div class="member-instrument">${performances[i].location}</div>
+                    <br>
+                    <div style="display: flex; flex-direction: row; gap: 20px; align-items: center;">
+                </div>
+            </section>
+        `);
+    }
+}
+
 makeCards();
 memberDetails();
-
+makePerformances();
 // Smooth scrolling for navigation
 document.querySelectorAll('nav a').forEach(link => {
     link.addEventListener('click', function(e) {

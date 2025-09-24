@@ -12,7 +12,7 @@ function changePage(section) {
 
 function updatePage() {
     //Clear all sections
-    document.querySelectorAll('.section').forEach(sec => sec.classList.add('hidden'));
+    document.querySelectorAll('main>.section').forEach(sec => sec.classList.add('hidden'));
     page = url.get('page') || 'home';
 
     document.getElementById(page).classList.remove('hidden');
