@@ -37,6 +37,12 @@ button:hover{
     color: #000;
 }
 
+.captioned-image {
+    text-align: center;
+    margin: 100px;
+    font-style: italic;
+}
+
 /* Animated background elements */
 .music-notes {
     position: fixed;
@@ -97,39 +103,28 @@ header {
 
 nav {
     background: rgba(0, 0, 0, 0.5);
-    padding: 30px;
+    padding: 0px;
     margin: 0 0 50px;
-    position: absolute;
-    left: -100vw;
-
-    transition: left 0.3s ease-in-out;
-}
-
-nav.open {
-    left: 0;
-    width: 100%;
-    z-index: -1;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 2rem;
     flex-wrap: wrap;
+    align-items: stretch;
 }
 
 nav a {
+    display: block;
     color: #fff;
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    border: 2px solid transparent;
-    border-radius: 25px;
     
-    transition: all 0.3s ease;
-    background: rgba(56, 56, 56, 0.9);
+    padding: 20px 50px;
 
-    margin: 40px;
+    transition: all 0.3s ease;
+
+    height: 100%;
 }
 
 nav a:hover {
