@@ -82,7 +82,7 @@ let cards = [
         name: "Nancy Qiu",
         img: "",
         instrument: "Tuba",
-        icon: "",
+        icon: "🎺",
         desc: "The foundation of Brassquake! Our tuba player provides the deep, resonant bass that makes our music truly earthquake-worthy.",
         detailedDesc: `<p>The foundation of Brassquake! Our tuba player provides the deep, resonant bass lines that give our quintet its solid foundation. Despite being the largest and lowest instrument, the tuba can be surprisingly agile and expressive in the right hands.</p>
                     <br>
@@ -119,7 +119,7 @@ function memberDetails() {
                     <br>
                     <div style="display: flex; flex-direction: row; gap: 20px; align-items: center;">
                         <div class="image-container" style="width: 50%; text-align: center; margin: 0 100px;">
-                            <img src="images/${cards[i].img}" alt="${cards[i].name}" style="width: 100%; height: auto;">
+                            <img class="member-image" src="images/${cards[i].img}" alt="${cards[i].name}" style="width: 100%; height: auto;">
                         </div>
                         <div class="member-detailed-description"style="width: 50%; text-align: left; display: flex; flex-direction: column; align-items: center;">
                             <p>${cards[i].detailedDesc}</p>

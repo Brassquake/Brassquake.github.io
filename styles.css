@@ -43,6 +43,11 @@ button:hover{
     font-style: italic;
 }
 
+.member-image{
+    border: 50px solid transparent;
+    border-image: url(images/border.png) 25 30 repeat;
+}
+
 /* Animated background elements */
 .music-notes {
     position: fixed;
