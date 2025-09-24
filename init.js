@@ -28,13 +28,13 @@ let cards = [
         instrument: "Trumpet",
         icon: "🎺",
         desc: "Trumpet player, bugle horn player, valve trombone player, tuba player, alto sax player etc. he basically plays everything.",
-        detailedDesc: `<p>As our first trumpet, this talented musician leads Brassquake with brilliant technique and musical leadership. Responsible for carrying the main melodic lines and soaring high notes, they bring both precision and artistry to every performance.</p>
+        detailedDesc: `<p>Excellant preformer with crazy range. </p>
                     <br>
-                    <p>With years of practice and dedication, our first trumpet has developed the skills necessary to handle the demanding repertoire of brass quintet literature, from baroque classics to contemporary works.</p>
+                    <p>Always in the trenches</p>
                     <br>
-                    <p><strong>Musical Journey:</strong> Started playing trumpet in elementary school and has been an active member of various ensembles at Dr. G.W. Williams S.S.</p>
+                    <p></p>
                     <br>
-                    <p><strong>Favorite Pieces:</strong> Classical trumpet concertos and modern film score arrangements</p>`
+                    <p></p>`
     },
     {
         name: "Alex Uchida",
