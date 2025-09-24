@@ -52,7 +52,7 @@ let cards = [
     },
     {
         name: "Arwen Leong",
-        img: "arwen.jpg",
+        img: "ArwenImage.png",
         instrument: "French Horn",
         icon: "📯",
         desc: "The heart of our quintet, bridging the gap between high and low voices with warm, lyrical horn melodies.",
