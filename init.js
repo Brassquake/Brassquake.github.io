@@ -96,6 +96,23 @@ let cards = [
 
 let performances = [
     {
+        date: "May 30th, 2025",
+        location: "Dr. G.W. Williams Secondary School",
+        summary: "Performance for many past graduatees of G.W. as a celebration of the school move. Over an hour of repertoire, the alumni had a great time!",
+        details: "Performance for many past graduatees of G.W. as a celebration of the school move. Over an hour of repertoire, the alumni had a great time! They did indeed!",
+        status: "past",
+        photos: [
+            {
+                title: "The Brassquake Team Taking a Quick Break!",
+                file: ""
+            },
+            {
+                title: "Placeholder",
+                file: ""
+            }
+        ]
+    },  
+    {
         date: "July 26th, 2025",
         location: "Aurora Town Square",
         summary: "Outdoor concert for a live audience. Playing over 30 minutes of repertoire, the people of Aurora greatly enjoyed the band!",
@@ -198,7 +215,14 @@ function performanceDetails() {
                                     <iframe width="100%" height="315" src="${video.url}" frameborder="0" allowfullscreen></iframe>
                                 </div>
                             `).join('')
-                            : '<p><strong>Videos:</strong> Coming soon!</p>'
+                            : perf.photos && perf.photos.length > 0
+                                ? perf.photos.map(photo => `
+                                    <div style="width: 100%; max-width: 600px;">
+                                        <h3 style="color: #ffd700; margin-bottom: 0.5rem;">${photo.title}</h3>
+                                        <img src="${photo.file}" alt="${photo.title}" style="width: 100%; border: 2px solid #ffd700; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">
+                                    </div>
+                                `).join('')
+                                : '<p><strong>Media:</strong> Coming soon!</p>'
                         }
                     </div>
                 </div>
