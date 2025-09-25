@@ -98,8 +98,8 @@ let performances = [
     {
         date: "May 30th, 2025",
         location: "Dr. G.W. Williams Secondary School",
-        summary: "Performance for many past graduatees of G.W. as a celebration of the school move. Over an hour of repertoire, the alumni had a great time!",
-        details: "Performance for many past graduatees of G.W. as a celebration of the school move. Over an hour of repertoire, the alumni had a great time! They did indeed!",
+        summary: "Performance for many past graduates of G.W. as a celebration of the school move. Over an hour of repertoire, the alumni had a great time!",
+        details: "Performance for many past graduates of G.W. as a celebration of the school move. Over an hour of repertoire, the alumni had a great time! They did indeed!",
         status: "past",
         photos: [
             {
