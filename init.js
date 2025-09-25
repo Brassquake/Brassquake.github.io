@@ -102,8 +102,9 @@ let performances = [
         status: "past"
     },
     {
-        date: "jfjejf",
+        date: "October 17th, 2025",
         location: "Dr. G.W. Williams Secondary School",
+        details: "Open mic performance! It's free for all audiences, so make sure to come by and watch Brassquake play some fun repertoire!",
         status: "upcoming"
     }
 ];
