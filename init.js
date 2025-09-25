@@ -172,25 +172,14 @@ function performanceDetails() {
 
         document.querySelector('#performance-detail-page').insertAdjacentHTML('beforeend', `
             <section id="${perfId}-detail" class="section hidden">
-                <div class="member-detail">
-                    <a href="#" class="back-button" onclick="changePage('page=performances')">← Back to Performances</a>
-                    <span class="instrument-icon">🎶</span>
-                    <h2>${perf.location}</h2>
-                    <div class="member-instrument">${perf.date}</div>
-                    <br>
-                    <div style="display: flex; flex-direction: row; gap: 20px; align-items: center;">
-                        <div class="image-container" style="width: 50%; text-align: center; margin: 0 100px;">
-                            <img class="member-image" src="images/performance-${i}.jpg" alt="${perf.location}" style="width: 100%; height: auto;">
-                        </div>
-                        <div class="member-detailed-description" style="width: 50%; text-align: left; display: flex; flex-direction: column; align-items: center;">
-                            <p>${perf.details || 'Details coming soon!'}</p>
-                            <br>
-                            <p><strong>Videos:</strong> Coming soon!</p>
-                        </div>
-                    </div>
-                </div>
+                <!-- your detail layout here -->
             </section>
         `);
+
+        // 👇 This ensures the detail section is inside the correct parent
+        document.getElementById('performance-detail-page').appendChild(
+            document.getElementById(`${perfId}-detail`)
+        );
     }
 }
 
