@@ -195,6 +195,7 @@ h2::after {
 }
 
 .member-card {
+    position: relative;
     width: 30%;
     background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 107, 53, 0.1));
     border-radius: 15px;
@@ -226,6 +227,20 @@ h2::after {
     display: block;
     border-radius: 10px;
 }
+
+.status-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ffd700;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+    
 
 #performance-grid {
     display: flex;
