@@ -12,7 +12,7 @@ body {
     overflow-x: hidden;
     min-height: 100vh;
     line-height: 1.6;
-    scroll-behavoir: smooth;
+    scroll-behavior: smooth;
 }
 
 hr{
@@ -386,7 +386,7 @@ footer {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: none;
 }
 
 ::-webkit-scrollbar-thumb {
