@@ -98,8 +98,8 @@ let performances = [
     {
         date: "July 26th, 2025",
         location: "Aurora Town Square",
-        details: "Outdoor concert for a live audience. Playing over 30 minutes of repertoire, the people of Aurora greatly enjoyed the band!"
-        staus: "past"
+        details: "Outdoor concert for a live audience. Playing over 30 minutes of repertoire, the people of Aurora greatly enjoyed the band!",
+        status: "past"
     },
     {
         date: "jfjejf",
