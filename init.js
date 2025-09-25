@@ -99,7 +99,13 @@ let performances = [
         date: "July 26th, 2025",
         location: "Aurora Town Square",
         details: "Outdoor concert for a live audience. Playing over 30 minutes of repertoire, the people of Aurora greatly enjoyed the band!",
-        status: "past"
+        status: "past",
+        videos: [
+            {
+                title: "Bolero - David Marlatt",
+                file: ""
+            }
+        ]
     },
     {
         date: "October 17th, 2025",
@@ -174,19 +180,23 @@ function performanceDetails() {
             <section id="${perfId}-detail" class="section hidden">
                 <div class="member-detail">
                     <a href="#" class="back-button" onclick="changePage('page=performances')">← Back to Performances</a>
-                    <span class="instrument-icon">🎶</span>
                     <h2>${perf.location}</h2>
                     <div class="member-instrument">${perf.date}</div>
                     <br>
-                    <div style="display: flex; flex-direction: row; gap: 20px; align-items: center;">
-                        <div class="image-container" style="width: 50%; text-align: center; margin: 0 100px;">
-                            <img class="member-image" src="images/performance-${i}.jpg" alt="${perf.location}" style="width: 100%; height: auto;">
-                        </div>
-                        <div class="member-detailed-description" style="width: 50%; text-align: left; display: flex; flex-direction: column; align-items: center;">
-                            <p>${perf.details || 'Details coming soon!'}</p>
-                            <br>
-                            <p><strong>Videos:</strong> Coming soon!</p>
-                        </div>
+                    <p style="margin-bottom: 2rem;">${perf.details || 'Details coming soon!'}</p>
+                    <div class="member-detailed-description" style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
+                        ${perf.videos && perf.videos.length > 0
+                            ? perf.videos.map(video => `
+                                <div style="width: 100%; max-width: 600px;">
+                                    <h3 style="color: #ffd700; margin-bottom: 0.5rem;">${video.title}</h3>
+                                    <video width="100%" controls>
+                                        <source src="${video.file}" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            `).join('')
+                            : '<p><strong>Videos:</strong> Coming soon!</p>'
+                        }
                     </div>
                 </div>
             </section>
