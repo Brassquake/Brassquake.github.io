@@ -103,7 +103,7 @@ let performances = [
         videos: [
             {
                 title: "Bolero - David Marlatt",
-                file: ""
+                url: ""
             }
         ]
     },
@@ -189,10 +189,7 @@ function performanceDetails() {
                             ? perf.videos.map(video => `
                                 <div style="width: 100%; max-width: 600px;">
                                     <h3 style="color: #ffd700; margin-bottom: 0.5rem;">${video.title}</h3>
-                                    <video width="100%" controls>
-                                        <source src="${video.file}" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
+                                    <iframe width="100%" height="315" src="${video.url}" frameborder="0" allowfullscreen></iframe>
                                 </div>
                             `).join('')
                             : '<p><strong>Videos:</strong> Coming soon!</p>'
