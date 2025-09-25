@@ -98,7 +98,8 @@ let performances = [
     {
         date: "July 26th, 2025",
         location: "Aurora Town Square",
-        details: "Outdoor concert for a live audience. Playing over 30 minutes of repertoire, the people of Aurora greatly enjoyed the band!",
+        summary: "Outdoor concert for a live audience. Playing over 30 minutes of repertoire, the people of Aurora greatly enjoyed the band!",
+        details: "Outdoor concert for a live audience. Playing over 30 minutes of repertoire, the people of Aurora greatly enjoyed the band! Yes indeed we did!",
         status: "past",
         videos: [
             {
@@ -110,7 +111,8 @@ let performances = [
     {
         date: "October 17th, 2025",
         location: "Dr. G.W. Williams Secondary School",
-        details: "Open mic performance! It's free for all audiences, so make sure to come by and watch Brassquake play some fun repertoire!",
+        summary: "Open mic performance! It's free for all audiences, so make sure to come by and watch Brassquake play some fun repertoire!",
+        details: "Open mic performance! It's free for all audiences, so make sure to come by and watch Brassquake play some fun repertoire! Yes indeed you should!",
         status: "upcoming"
     }
 ];
@@ -165,7 +167,7 @@ function makePerformances() {
                 </div>
                 <div class="member-name">${perf.location}</div>
                 <div class="member-instrument">${perf.date}</div>
-                <div class="member-description">${perf.details || 'Details coming soon!'}</div>
+                <div class="member-description">${perf.summary || 'Details coming soon!'}</div>
             </div>
         `);
     }
