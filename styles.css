@@ -308,6 +308,16 @@ h2::after {
     box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
 }
 
+/*Video borders */
+
+.member-detailed-description iframe,
+.member-detailed-description video {
+    border: 2px solid #ffd700; 
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 /* About section */
 .about-content {
     text-align: center;
