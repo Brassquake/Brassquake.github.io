@@ -80,7 +80,7 @@ let cards = [
     },
     {
         name: "Nancy Qiu",
-        img: "",
+        img: "NancyImage.JPG",
         instrument: "Tuba",
         icon: "🎺",
         desc: "The foundation of Brassquake! Our tuba player provides the deep, resonant bass that makes our music truly earthquake-worthy.",
