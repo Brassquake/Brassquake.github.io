@@ -1,25 +1,5 @@
-function realignText() {
-    const cards = document.querySelectorAll('.card .image-container');
-    let maxHeight = 0;
 
-    cards.forEach(imgContainer => {
-        const height = imgContainer.offsetHeight;
-        if (height > maxHeight) {
-            maxHeight = height;
-        }
-    });
-
-    cards.forEach(imgContainer => {
-        const card = imgContainer.parentElement.parentElement;
-        const text = card.querySelector('.image-text');
-        console.log(text);
-        if (text) {
-            text.style.marginTop = `${maxHeight - imgContainer.offsetHeight}px`;
-        }
-    });
-}
-window.addEventListener('load', realignText);
-window.addEventListener('resize', realignText);
+window.addEventListener('resize', () => {realignPerformanceText();});
 
 let cards = [
     {
@@ -111,7 +91,7 @@ let performances = [
                 file: ""
             }
         ]
-    },  
+    },
     {
         date: "July 26th, 2025",
         location: "Aurora Town Square",
@@ -182,13 +162,13 @@ function makePerformances() {
 
         document.querySelector('#performance-grid').insertAdjacentHTML('beforeend', `
             <div class="member-card" onclick="changePage('page=performance-detail-page&performance=${perfId}')">
-                ${perf.status === "upcoming" ? '<div class="status-tag">Upcoming</div>' : ''}
                 <div class="image-container">
+                ${perf.status === "upcoming" ? '<div class="status-tag">Upcoming</div>' : ''}
                     <img class="member-image" src="images/performance-${i}.jpg" alt="${perf.location}">
                 </div>
                 <div class="member-name">${perf.location}</div>
                 <div class="member-instrument">${perf.date}</div>
-                <div class="member-description">${perf.summary || 'Details coming soon!'}</div>
+                <div style="display: flex; justify-content: flex-start; align-items: flex-start;">${perf.summary || 'Details coming soon!'}</div>
             </div>
         `);
     }
@@ -209,21 +189,21 @@ function performanceDetails() {
                     <p style="margin-bottom: 2rem;">${perf.details || 'Details coming soon!'}</p>
                     <div class="member-detailed-description" style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
                         ${perf.videos && perf.videos.length > 0
-                            ? perf.videos.map(video => `
+                ? perf.videos.map(video => `
                                 <div style="width: 100%; max-width: 600px;">
                                     <h3 style="color: #ffd700; margin-bottom: 0.5rem;">${video.title}</h3>
                                     <iframe width="100%" height="315" src="${video.url}" frameborder="0" allowfullscreen></iframe>
                                 </div>
                             `).join('')
-                            : perf.photos && perf.photos.length > 0
-                                ? perf.photos.map(photo => `
+                : perf.photos && perf.photos.length > 0
+                    ? perf.photos.map(photo => `
                                     <div style="width: 100%; max-width: 600px;">
                                         <h3 style="color: #ffd700; margin-bottom: 0.5rem;">${photo.title}</h3>
                                         <img src="${photo.file}" alt="${photo.title}" style="width: 100%; border: 2px solid #ffd700; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">
                                     </div>
                                 `).join('')
-                                : '<p><strong>Media:</strong> Coming soon!</p>'
-                        }
+                    : '<p><strong>Media:</strong> Coming soon!</p>'
+            }
                     </div>
                 </div>
             </section>
@@ -237,7 +217,7 @@ makePerformances();
 performanceDetails();
 // Smooth scrolling for navigation
 document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', function(e) {
+    link.addEventListener('click', function (e) {
         e.preventDefault();
     });
 });
@@ -246,7 +226,7 @@ document.querySelectorAll('nav a').forEach(link => {
 function createFloatingNotes() {
     const notesContainer = document.querySelector('.music-notes');
     const notes = ['♪', '♫', '♬', '♩', '♭', '♯', '𝄞'];
-    
+
     for (let i = 0; i < 15; i++) {
         const note = document.createElement('div');
         note.className = 'note';
@@ -261,18 +241,50 @@ function createFloatingNotes() {
 
 // Add some interactive effects
 document.querySelectorAll('.member-card').forEach(card => {
-    card.addEventListener('mouseenter', function() {
+    card.addEventListener('mouseenter', function () {
         this.style.transform = 'translateY(-10px) scale(1.02)';
     });
-    
-    card.addEventListener('mouseleave', function() {
+
+    card.addEventListener('mouseleave', function () {
         this.style.transform = 'translateY(0) scale(1)';
     });
 });
 
+function alignPerformanceText() {
+    const cards = document.querySelectorAll("#performance-grid>.member-card");
+    if (!cards.length) return;
+
+    const numChildren = cards[0].children.length; // assume all cards have same number of children
+
+    for (let i = 0; i < numChildren; i++) {
+        // Step 1: find max offsetHeight for this child index
+        let maxHeight = 0;
+
+        cards.forEach(card => {
+            const child = card.children[i];
+            if (child.offsetHeight > maxHeight) {
+                maxHeight = child.offsetHeight;
+            }
+        });
+
+        console.log(`Max height for child index ${i}: ${maxHeight}`);
+
+        // Step 2: apply marginTop to align this child across all cards
+        cards.forEach(card => {
+            const child = card.children[i];
+            child.style.height = `${maxHeight}px`;
+        });
+    }
+}
+
+
 // Initialize the page
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     createFloatingNotes();
     updatePage();
     window.scrollTo(0, 0);
+
+    requestAnimationFrame(() => {
+        alignPerformanceText();
+    });
 });
