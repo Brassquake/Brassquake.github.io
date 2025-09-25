@@ -11,20 +11,27 @@ function changePage(section) {
 }
 
 function updatePage() {
-    //Clear all sections
+    // Clear all sections
     document.querySelectorAll('main>.section').forEach(sec => sec.classList.add('hidden'));
     page = url.get('page') || 'home';
 
     document.getElementById(page).classList.remove('hidden');
-    if(page === 'member-detail-page' && url.get('member')) {
+
+    // Show member detail section
+    if (page === 'member-detail-page' && url.get('member')) {
         document.getElementById(`${url.get("member")}-detail`).classList.remove('hidden');
         console.log("hi");
     }
 
-    //Colour button
+    // Show performance detail section
+    if (page === 'performance-detail-page' && url.get('performance')) {
+        document.getElementById(`${url.get("performance")}-detail`).classList.remove('hidden');
+    }
+
+    // Colour button
     document.querySelectorAll("nav a").forEach(link => {
         link.classList.remove('active');
-        if(link.textContent.toLowerCase() === page) {
+        if (link.textContent.toLowerCase() === page) {
             link.classList.add('active');
         }
     });

@@ -80,7 +80,7 @@ let cards = [
     },
     {
         name: "Nancy Qiu",
-        img: "",
+        img: "NancyImage.JPG",
         instrument: "Tuba",
         icon: "🎺",
         desc: "The foundation of Brassquake! Our tuba player provides the deep, resonant bass that makes our music truly earthquake-worthy.",
@@ -96,8 +96,45 @@ let cards = [
 
 let performances = [
     {
+        date: "May 30th, 2025",
+        location: "Dr. G.W. Williams Secondary School",
+        summary: "Performance for many past graduatees of G.W. as a celebration of the school move. Over an hour of repertoire, the alumni had a great time!",
+        details: "Performance for many past graduatees of G.W. as a celebration of the school move. Over an hour of repertoire, the alumni had a great time! They did indeed!",
+        status: "past",
+        photos: [
+            {
+                title: "The Brassquake Team Taking a Quick Break!",
+                file: ""
+            },
+            {
+                title: "Placeholder",
+                file: ""
+            }
+        ]
+    },  
+    {
         date: "July 26th, 2025",
         location: "Aurora Town Square",
+        summary: "Outdoor concert for a live audience. Playing over 30 minutes of repertoire, the people of Aurora greatly enjoyed the band!",
+        details: "Outdoor concert for a live audience. Playing over 30 minutes of repertoire, the people of Aurora greatly enjoyed the band! Yes indeed we did!",
+        status: "past",
+        videos: [
+            {
+                title: "Bolero - David Marlatt",
+                url: "https://www.youtube.com/embed/Cti8e4lQblw?si=6z6wYIRd0vkanALu"
+            },
+            {
+                title: "Pride and Valour - Ryan Meeboer",
+                url: "https://www.youtube.com/embed/ve_6N2liHjY?si=v6jKJroCLKBkOQUL"
+            }
+        ]
+    },
+    {
+        date: "October 17th, 2025",
+        location: "Dr. G.W. Williams Secondary School",
+        summary: "Open mic performance! It's free for all audiences, so make sure to come by and watch Brassquake play some fun repertoire!",
+        details: "Open mic performance! It's free for all audiences, so make sure to come by and watch Brassquake play some fun repertoire! Yes indeed you should!",
+        status: "upcoming"
     }
 ];
 
@@ -140,14 +177,54 @@ function memberDetails() {
 
 function makePerformances() {
     for (let i = 0; i < performances.length; i++) {
+        const perf = performances[i];
+        const perfId = `${perf.location}-${perf.date}`.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9\-]/g, '');
+
         document.querySelector('#performance-grid').insertAdjacentHTML('beforeend', `
-            <section id="performance-${i}" class="section">
-                <div class="performance-details" style="text-align: center;">
-                    <img src="images/performance-${i}.jpg" alt="Performance ${i + 1}" style="height: 50%;">
-                    <h2>${performances[i].location}</h2>
-                    <div class="member-instrument">${performances[i].date}</div>
+            <div class="member-card" onclick="changePage('page=performance-detail-page&performance=${perfId}')">
+                ${perf.status === "upcoming" ? '<div class="status-tag">Upcoming</div>' : ''}
+                <div class="image-container">
+                    <img class="member-image" src="images/performance-${i}.jpg" alt="${perf.location}">
+                </div>
+                <div class="member-name">${perf.location}</div>
+                <div class="member-instrument">${perf.date}</div>
+                <div class="member-description">${perf.summary || 'Details coming soon!'}</div>
+            </div>
+        `);
+    }
+}
+
+function performanceDetails() {
+    for (let i = 0; i < performances.length; i++) {
+        const perf = performances[i];
+        const perfId = `${perf.location}-${perf.date}`.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9\-]/g, '');
+
+        document.querySelector('#performance-detail-page').insertAdjacentHTML('beforeend', `
+            <section id="${perfId}-detail" class="section hidden">
+                <div class="member-detail">
+                    <a href="#" class="back-button" onclick="changePage('page=performances')">← Back to Performances</a>
+                    <h2>${perf.location}</h2>
+                    <div class="member-instrument">${perf.date}</div>
                     <br>
-                    <p>${performances[i].details || 'Details coming soon!'}</p>
+                    <p style="margin-bottom: 2rem;">${perf.details || 'Details coming soon!'}</p>
+                    <div class="member-detailed-description" style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
+                        ${perf.videos && perf.videos.length > 0
+                            ? perf.videos.map(video => `
+                                <div style="width: 100%; max-width: 600px;">
+                                    <h3 style="color: #ffd700; margin-bottom: 0.5rem;">${video.title}</h3>
+                                    <iframe width="100%" height="315" src="${video.url}" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            `).join('')
+                            : perf.photos && perf.photos.length > 0
+                                ? perf.photos.map(photo => `
+                                    <div style="width: 100%; max-width: 600px;">
+                                        <h3 style="color: #ffd700; margin-bottom: 0.5rem;">${photo.title}</h3>
+                                        <img src="${photo.file}" alt="${photo.title}" style="width: 100%; border: 2px solid #ffd700; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">
+                                    </div>
+                                `).join('')
+                                : '<p><strong>Media:</strong> Coming soon!</p>'
+                        }
+                    </div>
                 </div>
             </section>
         `);
@@ -157,6 +234,7 @@ function makePerformances() {
 makeCards();
 memberDetails();
 makePerformances();
+performanceDetails();
 // Smooth scrolling for navigation
 document.querySelectorAll('nav a').forEach(link => {
     link.addEventListener('click', function(e) {
@@ -196,4 +274,5 @@ document.querySelectorAll('.member-card').forEach(card => {
 document.addEventListener('DOMContentLoaded', function() {
     createFloatingNotes();
     updatePage();
+    window.scrollTo(0, 0);
 });

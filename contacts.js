@@ -1,7 +1,7 @@
 let contacts = [
     {
         method: "Email: brassquakegw@gmail.com",
-        url: "mailto:brassquake@gmail.com",
+        url: "mailto:brassquakegw@gmail.com",
         icon: "images/Email.png"
     },
     {
@@ -16,12 +16,18 @@ let contacts = [
     },
 ];
 
-for(let i = 0; i < contacts.length; i++) {
+for (let i = 0; i < contacts.length; i++) {
+    const contact = contacts[i];
+    const isEmail = contact.url.startsWith("mailto:");
+
     document.querySelector('#contacts-list').insertAdjacentHTML('beforeend', `
         <li>
             <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-                <img src="${contacts[i].icon}" style="width: 30px; border-radius: 5px;">
-                <a style="color: white;" href="${contacts[i].url}" target="${(contacts[i].url) ? '_blank' : ''}" title="${contacts[i].method}">${contacts[i].method}</a>
+                <img src="${contact.icon}" style="width: 30px; border-radius: 5px;">
+                ${isEmail
+                    ? `<span style="color: white;">${contact.method}</span>`
+                    : `<a style="color: white;" href="${contact.url}" target="_blank" title="${contact.method}">${contact.method}</a>`
+                }
             </div>
         </li>
     `);
