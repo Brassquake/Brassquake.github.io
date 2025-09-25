@@ -178,7 +178,7 @@ function memberDetails() {
 function makePerformances() {
     for (let i = 0; i < performances.length; i++) {
         const perf = performances[i];
-        const perfId = perf.location.toLowerCase().replace(/\s+/g, '-');
+        const perfId = `${perf.location}-${perf.date}`.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9\-]/g, '');
 
         document.querySelector('#performance-grid').insertAdjacentHTML('beforeend', `
             <div class="member-card" onclick="changePage('page=performance-detail-page&performance=${perfId}')">
