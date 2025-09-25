@@ -49,14 +49,8 @@ let cards = [
         img: "BrianImage.JPG",
         instrument: "Trombone",
         icon: "🎺",
-        desc: "Delivering powerful bass lines and smooth glissandos, our trombonist provides the foundation for our ensemble.",
-        detailedDesc: `<p>Our trombonist brings both power and finesse to Brassquake, mastering the unique slide technique that makes the trombone so distinctive. From smooth legato passages to punchy rhythmic figures, they add versatility to our ensemble.</p>
-                    <br>
-                    <p>The trombone's ability to play both bass and tenor lines makes our trombonist an invaluable member of the quintet, often providing crucial harmonic support and occasional melodic features.</p>
-                    <br>
-                    <p><strong>Musical Journey:</strong> Loves the trombone's expressive capabilities and its role in various musical styles</p>
-                    <br>
-                    <p><strong>Favorite Pieces:</strong> Jazz arrangements and pieces that feature the trombone's slide techniques</p>`
+        desc: "trombone",
+        detailedDesc: `<p>can't find 5th position</p>`
     },
     {
         name: "Nancy Qiu",
@@ -187,7 +181,7 @@ function performanceDetails() {
                     <div class="member-instrument">${perf.date}</div>
                     <br>
                     <p style="margin-bottom: 2rem;">${perf.details || 'Details coming soon!'}</p>
-                    <div class="member-detailed-description" style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
+                    <div class="member-detailed-description" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; align-items: flex-start;">
                         ${perf.videos && perf.videos.length > 0
                 ? perf.videos.map(video => `
                                 <div style="width: 100%; max-width: 600px;">
