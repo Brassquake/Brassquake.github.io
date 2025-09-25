@@ -152,6 +152,7 @@ function makePerformances() {
 
         document.querySelector('#performance-grid').insertAdjacentHTML('beforeend', `
             <div class="member-card" onclick="changePage('page=performance-detail-page&performance=${perfId}')">
+                ${perf.status === "upcoming" ? '<div class="status-tag">Upcoming</div>' : ''}
                 <div class="image-container">
                     <img class="member-image" src="images/performance-${i}.jpg" alt="${perf.location}">
                 </div>
