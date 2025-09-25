@@ -98,6 +98,10 @@ let performances = [
     {
         date: "July 26th, 2025",
         location: "Aurora Town Square",
+    },
+    {
+        date: "jfjejf",
+        location: "Dr. G.W. Williams Secondary School",
     }
 ];
 
