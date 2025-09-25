@@ -246,4 +246,5 @@ document.querySelectorAll('.member-card').forEach(card => {
 document.addEventListener('DOMContentLoaded', function() {
     createFloatingNotes();
     updatePage();
+    window.scrollTo(0, 0);
 });
