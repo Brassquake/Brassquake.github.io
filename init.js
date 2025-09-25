@@ -105,6 +105,10 @@ let performances = [
             {
                 title: "Bolero - David Marlatt",
                 url: "https://www.youtube.com/embed/Cti8e4lQblw?si=6z6wYIRd0vkanALu"
+            },
+            {
+                title: "Pride and Valour - Ryan Meeboer",
+                url: "https://www.youtube.com/embed/ve_6N2liHjY?si=v6jKJroCLKBkOQUL"
             }
         ]
     },
