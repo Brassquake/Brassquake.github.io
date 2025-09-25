@@ -211,6 +211,30 @@ h2::after {
     border-color: #ffd700;
 }
 
+#performance-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.performance-details {
+    width: 300px;
+    height: 300px;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 107, 53, 0.1));
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.performance-details:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(255, 215, 0, 0.3);
+}
+
 .instrument-icon {
     font-size: 4rem;
     margin-bottom: 1rem;
