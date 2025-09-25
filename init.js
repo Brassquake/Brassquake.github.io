@@ -144,16 +144,18 @@ function memberDetails() {
 
 function makePerformances() {
     for (let i = 0; i < performances.length; i++) {
+        const perf = performances[i];
+        const perfId = perf.location.toLowerCase().replace(/\s+/g, '-');
+
         document.querySelector('#performance-grid').insertAdjacentHTML('beforeend', `
-            <section id="performance-${i}" class="section">
-                <div class="performance-details">
-                    <img src="images/performance-${i}.jpg" alt="Performance ${i + 1}" style="height: 50%;">
-                    <h2>${performances[i].location}</h2>
-                    <div class="member-instrument">${performances[i].date}</div>
-                    <br>
-                    <p>${performances[i].details || 'Details coming soon!'}</p>
+            <div class="member-card" onclick="changePage('page=performance-detail-page&performance=${perfId}')">
+                <div class="image-container">
+                    <img class="member-image" src="images/performance-${i}.jpg" alt="${perf.location}">
                 </div>
-            </section>
+                <div class="member-name">${perf.location}</div>
+                <div class="member-instrument">${perf.date}</div>
+                <div class="member-description">${perf.details || 'Details coming soon!'}</div>
+            </div>
         `);
     }
 }
