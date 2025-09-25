@@ -197,7 +197,7 @@ function makePerformances() {
 function performanceDetails() {
     for (let i = 0; i < performances.length; i++) {
         const perf = performances[i];
-        const perfId = perf.location.toLowerCase().replace(/\s+/g, '-');
+        const perfId = `${perf.location}-${perf.date}`.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9\-]/g, '');
 
         document.querySelector('#performance-detail-page').insertAdjacentHTML('beforeend', `
             <section id="${perfId}-detail" class="section hidden">
