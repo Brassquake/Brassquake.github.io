@@ -146,7 +146,7 @@ function makePerformances() {
     for (let i = 0; i < performances.length; i++) {
         document.querySelector('#performance-grid').insertAdjacentHTML('beforeend', `
             <section id="performance-${i}" class="section">
-                <div class="performance-details" style="text-align: center;">
+                <div class="performance-details">
                     <img src="images/performance-${i}.jpg" alt="Performance ${i + 1}" style="height: 50%;">
                     <h2>${performances[i].location}</h2>
                     <div class="member-instrument">${performances[i].date}</div>
