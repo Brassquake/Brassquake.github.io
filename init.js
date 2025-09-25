@@ -191,9 +191,6 @@ function performanceDetails() {
                 </div>
             </section>
         `);
-
-        // 👇 This line makes sure the detail section is visible
-        document.getElementById(`${perfId}-detail`).classList.remove('hidden');
     }
 }
 
