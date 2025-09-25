@@ -70,7 +70,7 @@ let cards = [
         instrument: "Trombone",
         icon: "🎺",
         desc: "trombone",
-        detailedDesc: `<p>can't find 5th position</p>
+        detailedDesc: `<p>can't find 5th position</p>`
     },
     {
         name: "Nancy Qiu",
@@ -201,7 +201,7 @@ function performanceDetails() {
                     <div class="member-instrument">${perf.date}</div>
                     <br>
                     <p style="margin-bottom: 2rem;">${perf.details || 'Details coming soon!'}</p>
-                    <div class="member-detailed-description" style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
+                    <div class="member-detailed-description" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
                         ${perf.videos && perf.videos.length > 0
                             ? perf.videos.map(video => `
                                 <div style="width: 100%; max-width: 600px;">
