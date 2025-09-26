@@ -188,6 +188,10 @@ function performanceDetails() {
                     <div class="member-instrument">${perf.date}</div>
                     <br>
                     <p style="margin-bottom: 2rem;">${perf.details || 'Details coming soon!'}</p>
+                </div>
+        
+                <!-- Move media outside of .member-detail -->
+                <div style="width: 100%; max-width: 1300px; margin: 0 auto;">
                     <div class="member-detailed-description" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; align-items: flex-start;">
                         ${perf.videos && perf.videos.length > 0
                             ? perf.videos.map(video => `
