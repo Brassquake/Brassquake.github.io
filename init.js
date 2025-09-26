@@ -21,14 +21,14 @@ let cards = [
         img: "alex.JPEG",
         instrument: "Trumpet",
         icon: "🎺",
-        desc: "Providing harmonic support and countermelodies, our second trumpet adds depth and richness to our brass sound.",
-        detailedDesc: `<p>Our second trumpet is an essential voice in the Brassquake quintet, providing crucial harmonic support and beautiful countermelodies. This role requires excellent listening skills and the ability to blend seamlessly with the ensemble.</p>
+        desc: "",
+        detailedDesc: `<p></p>
                 <br>
-                <p>While supporting the first trumpet, our second trumpet also takes on important solo passages and helps create the rich, full sound that defines our group's character.</p>
+                <p>Extracurriculars (not nessecarily music)</p>
                 <br>
-                <p><strong>Musical Journey:</strong> A dedicated musician with a passion for ensemble playing and collaborative music-making</p>
+                <p>Musical journey:</p>
                 <br>
-                <p><strong>Favorite Pieces:</strong> Brass quintet arrangements of popular songs and jazz standards</p>`
+                <p><strong>A quote from them:</strong></p>`
     },
     {
         name: "Arwen Leong",
@@ -37,20 +37,27 @@ let cards = [
         icon: "📯",
         desc: "The heart of our quintet, bridging the gap between high and low voices with warm, lyrical horn melodies.",
         detailedDesc: `<p>The French horn is often considered the most challenging brass instrument, and our horn player rises to meet that challenge with grace and skill. Serving as the bridge between the high trumpets and low brass, the horn adds warmth and lyrical beauty to our sound.</p>
-                    <br>
-                    <p>From hunting calls to romantic melodies, our French horn player brings versatility and musicality to every piece Brassquake performs.</p>
-                    <br>
-                    <p><strong>Musical Journey:</strong> Drawn to the French horn's unique voice and challenging technique</p>
-                    <br>
-                    <p><strong>Favorite Pieces:</strong> Romantic era compositions and film scores that showcase the horn's lyrical capabilities</p>`
+                     <br>
+                <p>Extracurriculars (not nessecarily music)</p>
+                <br>
+                <p>Musical journey:</p>
+                <br>
+                <p><strong>A quote from them:</strong></p>`
     },
     {
         name: "Brian Weng",
         img: "BrianImage.JPG",
         instrument: "Trombone",
         icon: "🎺",
-        desc: "trombone",
-        detailedDesc: `<p>can't find 5th position</p>`
+        desc: "providing harmonic support since 2025",
+        detailedDesc: `<p> Placeholder</p>
+                      <br>
+                <p>Extracurriculars: Taekwondo</p>
+                <br>
+                <p>Musical journey:Classically trained piano student for 10 years. Trombone player for ~3 years</p>
+                <br>
+                <p><strong>A quote from them: Can't find 5th position</strong></p>`
+        
     },
     {
         name: "Nancy Qiu",
@@ -60,12 +67,11 @@ let cards = [
         desc: "The foundation of Brassquake! Our tuba player provides the deep, resonant bass that makes our music truly earthquake-worthy.",
         detailedDesc: `<p>The foundation of Brassquake! Our tuba player provides the deep, resonant bass lines that give our quintet its solid foundation. Despite being the largest and lowest instrument, the tuba can be surprisingly agile and expressive in the right hands.</p>
                     <br>
-                    <p>From steady bass lines that anchor the harmony to surprising melodic moments, our tuba player proves that the biggest instrument can have the biggest impact on our sound.</p>
-                    <br>
-                    <p><strong>Musical Journey:</strong> Embraced the challenge of mastering the largest brass instrument</p>
-                    <br>
-                    <p><strong>Favorite Pieces:</strong> Pieces that showcase the tuba's surprising agility and melodic capabilities</p>`
-    }
+                <p>Extracurriculars (not nessecarily music)</p>
+                <br>
+                <p>Musical journey:</p>
+                <br>
+                <p><strong>A quote from them:</strong></p>`
 ];
 
 let performances = [
@@ -181,25 +187,23 @@ function performanceDetails() {
                     <div class="member-instrument">${perf.date}</div>
                     <br>
                     <p style="margin-bottom: 2rem;">${perf.details || 'Details coming soon!'}</p>
-                    <div style="width: 100%; max-width: 1300px; margin: 0 auto;">
-                        <div class="member-detailed-description" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; align-items: flex-start;">
-                            ${perf.videos && perf.videos.length > 0
-                                ? perf.videos.map(video => `
+                    <div class="member-detailed-description" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; align-items: flex-start;">
+                        ${perf.videos && perf.videos.length > 0
+                            ? perf.videos.map(video => `
+                                <div style="flex: 0 1 600px; max-width: 600px;">
+                                    <h3 style="color: #ffd700; margin-bottom: 0.5rem; text-align: center;">${video.title}</h3>
+                                    <iframe width="100%" height="315" src="${video.url}" frameborder="0" allowfullscreen style="border: 2px solid #ffd700; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); background-color: rgba(0, 0, 0, 0.2);"></iframe>
+                                </div>
+                            `).join('')
+                            : perf.photos && perf.photos.length > 0
+                                ? perf.photos.map(photo => `
                                     <div style="flex: 0 1 600px; max-width: 600px;">
-                                        <h3 style="color: #ffd700; margin-bottom: 0.5rem; text-align: center;">${video.title}</h3>
-                                        <iframe width="100%" height="315" src="${video.url}" frameborder="0" allowfullscreen style="border: 2px solid #ffd700; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); background-color: rgba(0, 0, 0, 0.2);"></iframe>
+                                        <h3 style="color: #ffd700; margin-bottom: 0.5rem; text-align: center;">${photo.title}</h3>
+                                        <img src="${photo.file}" alt="${photo.title}" style="width: 100%; border: 2px solid #ffd700; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); background-color: rgba(0, 0, 0, 0.2);">
                                     </div>
                                 `).join('')
-                                : perf.photos && perf.photos.length > 0
-                                    ? perf.photos.map(photo => `
-                                        <div style="flex: 0 1 600px; max-width: 600px;">
-                                            <h3 style="color: #ffd700; margin-bottom: 0.5rem; text-align: center;">${photo.title}</h3>
-                                            <img src="${photo.file}" alt="${photo.title}" style="width: 100%; border: 2px solid #ffd700; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); background-color: rgba(0, 0, 0, 0.2);">
-                                        </div>
-                                    `).join('')
-                                    : '<p><strong>Media:</strong> Coming soon!</p>'
-                            }
-                        </div>
+                                : '<p><strong>Media:</strong> Coming soon!</p>'
+                        }
                     </div>
                 </div>
             </section>
@@ -278,12 +282,9 @@ function alignPerformanceText() {
 document.addEventListener('DOMContentLoaded', function () {
     createFloatingNotes();
     updatePage();
+    window.scrollTo(0, 0);
 
     requestAnimationFrame(() => {
-        window.scrollTo(0, 0);
-    });
-
-    setTimeout(() => {
         alignPerformanceText();
-    }, 50); // slight delay to avoid layout shift
+    });
 });
