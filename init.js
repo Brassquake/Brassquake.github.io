@@ -72,6 +72,7 @@ let cards = [
                 <p>Musical journey:</p>
                 <br>
                 <p><strong>A quote from them:</strong></p>`
+    }
 ];
 
 let performances = [
