@@ -278,9 +278,12 @@ function alignPerformanceText() {
 document.addEventListener('DOMContentLoaded', function () {
     createFloatingNotes();
     updatePage();
-    window.scrollTo(0, 0);
 
     requestAnimationFrame(() => {
-        alignPerformanceText();
+        window.scrollTo(0, 0);
     });
+
+    setTimeout(() => {
+        alignPerformanceText();
+    }, 50); // slight delay to avoid layout shift
 });
