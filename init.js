@@ -184,14 +184,14 @@ function performanceDetails() {
                     <div class="member-detailed-description" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; align-items: flex-start;">
                         ${perf.videos && perf.videos.length > 0
                             ? perf.videos.map(video => `
-                                <div style="flex: 1 1 600px; max-width: 600px;">
+                                <div style="flex: 0 1 600px; max-width: 600px;">
                                     <h3 style="color: #ffd700; margin-bottom: 0.5rem; text-align: center;">${video.title}</h3>
                                     <iframe width="100%" height="315" src="${video.url}" frameborder="0" allowfullscreen style="border: 2px solid #ffd700; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); background-color: rgba(0, 0, 0, 0.2);"></iframe>
                                 </div>
                             `).join('')
                             : perf.photos && perf.photos.length > 0
                                 ? perf.photos.map(photo => `
-                                    <div style="flex: 1 1 600px; max-width: 600px;">
+                                    <div style="flex: 0 1 600px; max-width: 600px;">
                                         <h3 style="color: #ffd700; margin-bottom: 0.5rem; text-align: center;">${photo.title}</h3>
                                         <img src="${photo.file}" alt="${photo.title}" style="width: 100%; border: 2px solid #ffd700; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); background-color: rgba(0, 0, 0, 0.2);">
                                     </div>
