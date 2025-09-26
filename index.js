@@ -11,24 +11,35 @@ function changePage(section) {
 }
 
 function updatePage() {
+    const url = new URLSearchParams(window.location.search);
+    const page = url.get('page') || 'home';
+
     // Clear all sections
     document.querySelectorAll('main>.section').forEach(sec => sec.classList.add('hidden'));
-    page = url.get('page') || 'home';
 
-    document.getElementById(page).classList.remove('hidden');
+    // Show main page section
+    const mainSection = document.getElementById(page);
+    if (mainSection) {
+        mainSection.classList.remove('hidden');
+    }
 
     // Show member detail section
     if (page === 'member-detail-page' && url.get('member')) {
-        document.getElementById(`${url.get("member")}-detail`).classList.remove('hidden');
-        console.log("hi");
+        const memberSection = document.getElementById(`${url.get("member")}-detail`);
+        if (memberSection) {
+            memberSection.classList.remove('hidden');
+        }
     }
 
     // Show performance detail section
     if (page === 'performance-detail-page' && url.get('performance')) {
-        document.getElementById(`${url.get("performance")}-detail`).classList.remove('hidden');
+        const perfSection = document.getElementById(`${url.get("performance")}-detail`);
+        if (perfSection) {
+            perfSection.classList.remove('hidden');
+        }
     }
 
-    // Colour button
+    // Highlight active nav button
     document.querySelectorAll("nav a").forEach(link => {
         link.classList.remove('active');
         if (link.textContent.toLowerCase() === page) {
