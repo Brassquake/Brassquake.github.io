@@ -56,7 +56,7 @@ let cards = [
                 <br>
                 <p>Musical journey:Classically trained piano student for 10 years. Trombone player for ~3 years</p>
                 <br>
-                <p><strong>A quote from them: Can't find 5th position</strong></p>`
+                <p><strong>"Can't find 5th position"</strong></p>`
         
     },
     {
