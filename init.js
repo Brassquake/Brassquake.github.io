@@ -7,14 +7,14 @@ let cards = [
         img: "arvino.jpg",
         instrument: "Trumpet",
         icon: "🎺",
-        desc: "Trumpet player, bugle horn player, valve trombone player, tuba player, alto sax player etc. he basically plays everything.",
-        detailedDesc: `<p>Excellent preformer with crazy range. </p>
+        desc: "Our first trumpet player has an excellent variety of skills in many different brass instruments. He finds and chooses repertoire for the ensemble, all while providing great melodies.",
+        detailedDesc: `<p>General info: </p>
                     <br>
-                    <p>Always in the trenches</p>
+                    <p>Extracurriculars (not nessecarily music)</p>
                     <br>
-                    <p></p>
+                    <p>Musical journey: </p>
                     <br>
-                    <p></p>`
+                    <p><strong>A quote from them:</strong></p>`
     },
     {
         name: "Alex Uchida",
