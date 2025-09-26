@@ -241,6 +241,7 @@ function createFloatingNotes() {
         note.style.animationDelay = Math.random() * 6 + 's';
         note.style.fontSize = (Math.random() * 1.5 + 1.5) + 'rem';
         notesContainer.appendChild(note);
+        console.log('Creating note:', note.textContent);
     }
 }
 
