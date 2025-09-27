@@ -5,12 +5,12 @@ let contacts = [
         icon: "images/Email.png"
     },
     {
-        method: "YouTube",
+        method: "YouTube - @Brassquake",
         url: "https://www.youtube.com/@Brassquake",
         icon: "images/youtube.png"
     },
     {
-        method: "Instagram",
+        method: "Instagram - @brassquake",
         url: "https://www.instagram.com/brassquake?igsh=OGw0cXkyOG1xamZ2",
         icon: "images/instagram.png"
     },
