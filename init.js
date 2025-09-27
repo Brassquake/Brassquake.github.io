@@ -76,6 +76,31 @@ let cards = [
 ];
 
 let performances = [
+      {
+        date: "October 17th, 2025",
+        location: "Dr. G.W. Williams Secondary School",
+        summary: "Open mic performance! It's free for all audiences, so make sure to come by and watch Brassquake play some fun repertoire!",
+        details: "Open mic performance! It's free for all audiences, so make sure to come by and watch Brassquake play some fun repertoire! Yes indeed you should!",
+        status: "upcoming"
+    },  
+      {
+        date: "July 26th, 2025",
+        location: "Aurora Town Square",
+        summary: "Outdoor concert for a live audience. Playing over 30 minutes of repertoire, the people of Aurora greatly enjoyed the band!",
+        details: "Outdoor concert for a live audience. Playing over 30 minutes of repertoire, the people of Aurora greatly enjoyed the band! Yes indeed we did!",
+        status: "past",
+        videos: [
+            {
+                title: "Bolero - David Marlatt",
+                url: "https://www.youtube.com/embed/Cti8e4lQblw?si=6z6wYIRd0vkanALu"
+            },
+            {
+                title: "Pride and Valour - Ryan Meeboer",
+                url: "https://www.youtube.com/embed/ve_6N2liHjY?si=v6jKJroCLKBkOQUL"
+            }
+        ]
+    },
+   
     {
         date: "May 30th, 2025",
         location: "Dr. G.W. Williams Secondary School",
@@ -93,30 +118,6 @@ let performances = [
             }
         ]
     },
-    {
-        date: "July 26th, 2025",
-        location: "Aurora Town Square",
-        summary: "Outdoor concert for a live audience. Playing over 30 minutes of repertoire, the people of Aurora greatly enjoyed the band!",
-        details: "Outdoor concert for a live audience. Playing over 30 minutes of repertoire, the people of Aurora greatly enjoyed the band! Yes indeed we did!",
-        status: "past",
-        videos: [
-            {
-                title: "Bolero - David Marlatt",
-                url: "https://www.youtube.com/embed/Cti8e4lQblw?si=6z6wYIRd0vkanALu"
-            },
-            {
-                title: "Pride and Valour - Ryan Meeboer",
-                url: "https://www.youtube.com/embed/ve_6N2liHjY?si=v6jKJroCLKBkOQUL"
-            }
-        ]
-    },
-    {
-        date: "October 17th, 2025",
-        location: "Dr. G.W. Williams Secondary School",
-        summary: "Open mic performance! It's free for all audiences, so make sure to come by and watch Brassquake play some fun repertoire!",
-        details: "Open mic performance! It's free for all audiences, so make sure to come by and watch Brassquake play some fun repertoire! Yes indeed you should!",
-        status: "upcoming"
-    }
 ];
 
 function makeCards() {
