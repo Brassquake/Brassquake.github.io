@@ -13,6 +13,13 @@ function changePage(section) {
 function updatePage() {
     const url = new URLSearchParams(window.location.search);
     const page = url.get('page') || 'home';
+    const logo = document.querySelector('.logo');
+    
+    if (page === 'home') {
+        logo.classList.remove('small');
+    } else {
+        logo.classList.add('small');
+    }
 
     // Clear all sections
     document.querySelectorAll('main>.section').forEach(sec => sec.classList.add('hidden'));
