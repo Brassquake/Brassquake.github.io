@@ -4,6 +4,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+header {
+  height: 60px; 
+  background: #333;
+  color: white;
+}
+
+body.home header {
+  height: 120px;
+}
 
 body {
     font-family: 'Arial', sans-serif;
