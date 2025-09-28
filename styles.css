@@ -107,6 +107,7 @@ header {
     gap: 0.5rem; /* Add spacing between logo, image, and subtitle */
     position: relative;
     z-index: 10;
+    border: 2px dashed red;
 }
 
 /* Logo image */
