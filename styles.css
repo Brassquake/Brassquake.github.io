@@ -6,7 +6,7 @@
 }
 
 html {
-    background: linear-gradient(to bottom, #6a3f8c 0%, #4c2a6a 50%, #2b1b3f 100%);
+    background: linear-gradient(to bottom, #6a3f8c 100%, #4c2a6a 50%, #2b1b3f 0%);
     /* background: linear-gradient(to bottom, #2b1b3f 0%, #4c2a6a 50%, #6a3f8c 100%); */
     color: #f0f0f0;
 }
