@@ -90,7 +90,7 @@ button:hover {
 header {
     text-align: center;
     padding: 0 0 100px;
-    background: linear-gradient(to bottom, #4c2a6a 0%, #2b1b3f 100%);
+    background: linear-gradient(to bottom, #2b1b3f 0%, #4c2a6a 100%);
     backdrop-filter: blur(10px);
     top: 0;
     z-index: 100;
