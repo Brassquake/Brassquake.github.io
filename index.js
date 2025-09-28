@@ -14,11 +14,14 @@ function updatePage() {
     const url = new URLSearchParams(window.location.search);
     const page = url.get('page') || 'home';
     const logo = document.querySelector('.logo');
+    const subtitle = document.querySelector('.subtitle');
     
     if (page === 'home') {
         logo.classList.remove('small');
+        subtitle.classList.remove('small');
     } else {
         logo.classList.add('small');
+        subtitle.classList.add('small');
     }
 
     // Clear all sections
