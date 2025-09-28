@@ -67,7 +67,7 @@ button:hover {
     width: 100%;
     height: 100%;
     pointer-events: none;
-    z-index: -1;
+    z-index: 0;
 }
 
 .note {
@@ -98,6 +98,8 @@ header {
     flex-direction: column;
     align-items: center;
     margin-top: 1rem;
+    padding: 1rem;
+    gap: 0.5rem; /* Add spacing between logo, image, and subtitle */
 }
 
 /* Logo image */
@@ -189,6 +191,7 @@ nav a.active {
     border-radius: 20px;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
 }
 
 .section.hidden {
