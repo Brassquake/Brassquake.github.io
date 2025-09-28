@@ -33,6 +33,7 @@ main {
     margin: 100px 0 300px;
     position: relative;
     z-index: 5;
+    margin-top: 2rem;
 }
 
 button {
@@ -207,7 +208,7 @@ nav a.active {
     border-radius: 20px;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    overflow: hidden;
+    overflow: visible;
     position: relative;
     z-index: 1;
 }
