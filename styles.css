@@ -91,7 +91,7 @@ button:hover {
 header {
     text-align: center;
     padding: 0 0 100px;
-    background: linear-gradient(to bottom, #2b1b3f 0%, #4c2a6a 100%);
+    background: linear-gradient(to bottom, #4c2a6a 0%, #2b1b3f 100%);
     backdrop-filter: blur(10px);
     top: 0;
     z-index: 100;
@@ -107,7 +107,7 @@ header {
     gap: 0.5rem; /* Add spacing between logo, image, and subtitle */
     position: relative;
     z-index: 10;
-    border: 2px dashed red;
+    /* border: 2px dashed red; */
 }
 
 /* Logo image */
