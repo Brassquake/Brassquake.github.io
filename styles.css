@@ -30,6 +30,8 @@ hr {
 
 main {
     margin: 100px 0 300px;
+    position: relative;
+    z-index: 5;
 }
 
 button {
@@ -87,7 +89,7 @@ button:hover {
 header {
     text-align: center;
     padding: 0 0 100px;
-    background: linear-gradient(135deg, #2b1b3f, #1a1a2e);
+    background: linear-gradient(to bottom, #2b1b3f 0%, #4c2a6a 100%);
     backdrop-filter: blur(10px);
     top: 0;
     z-index: 100;
@@ -111,6 +113,7 @@ header {
     height: auto;
     margin-bottom: 1rem;
     transition: width 0.3s ease;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2); /* soft yellow glow */
 }
 
 .logo-image.small {
@@ -190,7 +193,9 @@ nav a.active {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
-    backgrount: rgba(43, 27, 63, 0.4);
+    background: rgba(43, 27, 63, 0.4);
+    position: relative;
+    z-index: 1;
     /* border-radius: 20px; */
 }
 
