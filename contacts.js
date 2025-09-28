@@ -5,7 +5,7 @@ let contacts = [
         icon: "images/Email.png"
     },
     {
-        method: "YouTube - @Brassquake",
+        method: "YouTube - @brassquake",
         url: "https://www.youtube.com/@Brassquake",
         icon: "images/youtube.png"
     },
