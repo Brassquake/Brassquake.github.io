@@ -183,6 +183,8 @@ nav a.active {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
+    backgrount: rgba(43, 27, 63, 0.4);
+    /* border-radius: 20px; */
 }
 
 .section {
@@ -233,7 +235,7 @@ h2::after {
 .member-card {
     position: relative;
     width: 30%;
-    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 107, 53, 0.1));
+    background: linear-gradient(135deg, rgba(43, 27, 63, 0.8), rgba(60, 30, 90, 0.6));
     border-radius: 15px;
     padding: 1.5rem;
     text-align: center;
