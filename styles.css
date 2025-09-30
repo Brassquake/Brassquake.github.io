@@ -22,7 +22,7 @@ body {
 }
 
 body.home header {
-    height: 240px;
+    padding: 0 0 100px;
 }
 
 hr {
