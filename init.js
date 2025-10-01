@@ -76,14 +76,21 @@ let cards = [
 ];
 
 let performances = [
-      {
+    {
+        date: "October 24th, 2025",
+        location: "The Residences on Yonge, 15520 Yonge St, Aurora, ON",
+        summary: "One-hour performance at a retirement home along with many other amazing bands!",
+        details: "Backed by the non-profit organization 'The Chords of Care', Brassquake will be performing at a local retirement home, giving a great experience to everyone who watches! With new and intriguing repertoire, you are sure to have a great time!",
+        status: "upcoming"
+    },
+    {
         date: "October 17th, 2025",
         location: "Dr. G.W. Williams Secondary School",
         summary: "Open mic performance! It's free for all audiences, so make sure to come by and watch Brassquake play some fun repertoire!",
         details: "Open mic performance! It's free for all audiences, so make sure to come by and watch Brassquake play some fun repertoire! Yes indeed you should!",
         status: "upcoming"
     },  
-      {
+    {
         date: "July 26th, 2025",
         location: "Aurora Town Square",
         summary: "Outdoor concert for a live audience. Playing over 30 minutes of repertoire, the people of Aurora greatly enjoyed the band!",
