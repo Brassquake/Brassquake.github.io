@@ -38,9 +38,9 @@ let cards = [
         desc: "The heart of our quintet, bridging the gap between high and low voices with warm, lyrical horn melodies.",
         detailedDesc: `<p>The French horn is often considered the most challenging brass instrument, and our horn player rises to meet that challenge with grace and skill. Serving as the bridge between the high trumpets and low brass, the horn adds warmth and lyrical beauty to our sound.</p>
                      <br>
-                <p>Extracurriculars (not nessecarily music)</p>
+                <p>Extracurriculars Soft ball and football</p>
                 <br>
-                <p>Musical journey:</p>
+                <p>Musical journey: 7 years of piano, dabbled in the flute and trumpet</p>
                 <br>
                 <p><strong>"If you can't beat them, eat them"</strong></p>`
     },
