@@ -7,14 +7,14 @@ let cards = [
         img: "arvino.jpg",
         instrument: "Trumpet",
         icon: "🎺",
-        desc: "Our first trumpet player has an excellent variety of skills in many different brass instruments. He finds and chooses repertoire for the ensemble, all while providing great melodies.",
+        desc: "Our first trumpet player has an excellent variety of skills in many different brass instruments. He finds and chooses repertoire for the ensemble, generates different ideas, and adds a bright beautiful sound to the mix.",
         detailedDesc: `<p>General info: </p>
                     <br>
                     <p>Extracurriculars (not nessecarily music)</p>
                     <br>
                     <p>Musical journey: </p>
                     <br>
-                    <p><strong>A quote from them:</strong></p>`
+                    <p><strong>"To be the best, you must first believe you're the best"</strong></p>`
     },
     {
         name: "Alex Uchida",
@@ -22,9 +22,9 @@ let cards = [
         instrument: "Trumpet",
         icon: "🎺",
         desc: "Our second trumpet player is a skilled and highly reliant player, using her tonal sound to add beauty to the quintet. An extremely generous person as well, as Alex always lends a helping hand to the quintet.",
-        detailedDesc: `<p>Playing trumpet for 4 years, our second player is an extremely talented and kind individual. She has a love for Tim Horton's and Animal Crossing as well. Alex has a deep passion for music and the trumpet, providing the quintet with a beautiful tonal sound through melodies and counter-melodies. A highly-reliant player, Alex is sure to impress!"</p>
+        detailedDesc: `<p>Playing trumpet for 4 years, our second player is an extremely talented and kind individual. She has a love for Tim Horton's and Animal Crossing as well. Alex has a deep passion for music and the trumpet, providing the quintet with a beautiful tonal sound through her playing. A highly-reliant player, Alex is sure to impress!</p>
                 <br>
-                <p>Extracurriculars (not nessecarily music)</p>
+                <p>Alex loves to draw and create fun animations in her free time. She also enjoys video games, playing Minecraft to pass the time. A great photographer and video editor as well, and on top of it all, Alex has a sharp mind, being an avid escape room enjoyer.</p>
                 <br>
                 <p>Musical journey:</p>
                 <br>
