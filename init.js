@@ -42,7 +42,7 @@ let cards = [
                 <br>
                 <p>Musical journey:</p>
                 <br>
-                <p><strong>A quote from them:</strong></p>`
+                <p><strong>"If you can't beat them, eat them"</strong></p>`
     },
     {
         name: "Brian Weng",
