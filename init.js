@@ -21,8 +21,8 @@ let cards = [
         img: "alex.JPEG",
         instrument: "Trumpet",
         icon: "🎺",
-        desc: "",
-        detailedDesc: `<p></p>
+        desc: "Our second trumpet player is a skilled and highly reliant player, using her tonal sound to add beauty to the quintet. An extremely generous person as well, as Alex always lends a helping hand to the quintet.",
+        detailedDesc: `<p>Playing trumpet for 4 years, our second player is an extremely talented and kind individual. She has a love for Tim Horton's and Animal Crossing as well. Alex has a deep passion for music and the trumpet, providing the quintet with a beautiful tonal sound through melodies and counter-melodies. A highly-reliant player, Alex is sure to impress!"</p>
                 <br>
                 <p>Extracurriculars (not nessecarily music)</p>
                 <br>
