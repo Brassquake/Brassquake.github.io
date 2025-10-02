@@ -28,16 +28,16 @@ let cards = [
                 <br>
                 <p>Musical journey:</p>
                 <br>
-                <p><strong>"Hmm I will get back to you"</strong></p>`
+                <p><strong>"Thousands of light houses stuck at the end of the sky" - River Wyles from To The Moon</strong></p>`
     },
     {
         name: "Arwen Leong",
         img: "ArwenImage.png",
         instrument: "French Horn",
         icon: "📯",
-        desc: "The heart of our quintet, bridging the gap between high and low voices with warm, lyrical horn melodies.",
-        detailedDesc: `<p>The French horn is often considered the most challenging brass instrument, and our horn player rises to meet that challenge with grace and skill. Serving as the bridge between the high trumpets and low brass, the horn adds warmth and lyrical beauty to our sound.</p>
-                     <br>
+        desc: "Bridging the gap between the high and low voices, our french horn player has wonderful harmonies to show. Arwen brings lots of energy to the quintet with her vibrant and outgoing personality, always lightening the mood.",
+        detailedDesc: `<p>Playing the most difficult brass instrument of them all, Arwen displays wonderful skill in the French Horn. </p>
+                <br>
                 <p>Extracurriculars Soft ball and football</p>
                 <br>
                 <p>Musical journey: 7 years of piano, dabbled in the flute and trumpet</p>
