@@ -28,7 +28,7 @@ let cards = [
                 <br>
                 <p>Musical journey:</p>
                 <br>
-                <p><strong>"Thousands of light houses stuck at the end of the sky" - River Wyles from To The Moon</strong></p>`
+                <p><strong>"✨Thousands of light houses stuck at the end of the sky✨" - River Wyles From To The Moon</strong></p>`
     },
     {
         name: "Arwen Leong",
