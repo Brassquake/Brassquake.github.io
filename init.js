@@ -28,7 +28,7 @@ let cards = [
                 <br>
                 <p>Musical journey:</p>
                 <br>
-                <p><strong>A quote from them:</strong></p>`
+                <p><strong>"Hmm I will get back to you"</strong></p>`
     },
     {
         name: "Arwen Leong",
