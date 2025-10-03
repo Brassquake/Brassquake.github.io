@@ -92,50 +92,42 @@
             <section id="performance-detail-page" class="section hidden">
             <!-- Performance details will be dynamically inserted here -->
             </section>
-
-            <section id="contact" class="section hidden">
-                <h2>Get in Touch</h2>
-                <div class="about-content">
-                    <p>Interested in booking Brassquake for your event or want to learn more about our performances?</p>
-                    <hr>
-                    <br>
-
-                    <ul id="contacts-list" style="list-style: none; line-height: 2.5;">
-                        <!-- Contact links will be dynamically inserted here -->
-                    </ul>
-
-                    <br>
-                    <section id="contact" class="section contact-section">
-                      <h2>Contact Us</h2>
-                      <div class="contact-grid">
-                        <!-- Left: Contact Form -->
-                        <form id="contact-form" action="https://formspree.io/f/xblzywbj" method="POST">
-                          <div class="form-group">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required>
-                          </div>
-                    
-                          <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="_replyto" required>
-                          </div>
-                    
-                          <div class="form-group">
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                          </div>
-                    
-                          <button type="submit">Send Message</button>
-                        </form>
-                    
-                        <!-- Right: Contact Info List -->
-                        <ul id="contacts-list" class="contact-info-list"></ul>
-                      </div>
-                    </section>
-                    <hr>
-                    <p><strong>School:</strong> <span class="school-name">Dr. G.W. Williams Secondary School</span></p>
-                    <p><strong>Location:</strong> Aurora, Ontario</p>   
-                </div>
+            
+            <section id="contact" class="section hidden contact-section">
+              <h2>Get in Touch</h2>
+              <p>Interested in booking Brassquake for your event or want to learn more about our performances?</p>
+              <hr><br>
+            
+              <div class="contact-grid">
+                <!-- Left: Contact Form -->
+                <form id="contact-form" action="https://formspree.io/f/xblzywbj" method="POST">
+                  <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                  </div>
+            
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="_replyto" required>
+                  </div>
+            
+                  <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                  </div>
+            
+                  <button type="submit">Send Message</button>
+                </form>
+            
+                <!-- Right: Contact Info List -->
+                <ul id="contacts-list" class="contact-info-list">
+                  <!-- Contact links will be dynamically inserted here by contacts.js -->
+                </ul>
+              </div>
+            
+              <hr>
+              <p><strong>School:</strong> <span class="school-name">Dr. G.W. Williams Secondary School</span></p>
+              <p><strong>Location:</strong> Aurora, Ontario</p>
             </section>
         </div>
     </main>
