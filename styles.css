@@ -332,6 +332,12 @@ h2::after {
   padding: 2rem;
 }
 
+.contact-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
 .contact-grid {
   display: flex;
   justify-content: space-between;
