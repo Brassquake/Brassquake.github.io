@@ -90,11 +90,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (form) {
     form.addEventListener("submit", function (e) {
-      e.preventDefault(); // Prevent redirect
+      e.preventDefault(); // Stop default redirect
 
       const formData = new FormData(form);
 
-      fetch(form.action, {
+      fetch("https://formspree.io/f/xblzywbj", {
         method: "POST",
         body: formData,
         headers: {
