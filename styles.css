@@ -422,15 +422,22 @@ button[type="submit"]:hover {
   border-radius: 5px;
 }
 
-.contact-info-list a,
-.contact-info-list span {
+.contact-info-list a {
   color: #ffd700;
   font-size: 1.1rem;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
 }
 
 .contact-info-list a:hover {
   text-decoration: underline;
+  text-decoration-color: #ff6b35;
+}
+
+.contact-info-list span {
+  color: #ffd700;
+  font-size: 1.1rem;
 }
 
 /* Responsive Layout */
