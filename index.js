@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (form) {
     form.addEventListener("submit", function (e) {
-      e.preventDefault(); // Stop default redirect
+      e.preventDefault();
 
       const formData = new FormData(form);
 
@@ -105,8 +105,12 @@ document.addEventListener("DOMContentLoaded", () => {
           alert("Thanks for your message! We'll get back to you soon.");
           form.reset();
         } else {
-          alert("Oops! Something went wrong. Please try again.");
+          response.json().then(data => {
+            alert(data.error || "Oops! Something went wrong.");
+          });
         }
+      }).catch(error => {
+        alert("Network error: " + error.message);
       });
     });
   }
