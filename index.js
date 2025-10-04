@@ -84,3 +84,30 @@ function showMemberDetail(memberName) {
         detailSection.classList.remove('hidden');
     }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contact-form");
+
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent redirect
+
+      const formData = new FormData(form);
+
+      fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json"
+        }
+      }).then(response => {
+        if (response.ok) {
+          alert("Thanks for your message! We'll get back to you soon.");
+          form.reset();
+        } else {
+          alert("Oops! Something went wrong. Please try again.");
+        }
+      });
+    });
+  }
+});
