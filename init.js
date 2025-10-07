@@ -8,7 +8,7 @@ let cards = [
         instrument: "Trumpet",
         icon: "🎺",
         desc: "Our first trumpet player has an excellent variety of skills in many different brass instruments. He finds and chooses repertoire for the ensemble, generates different ideas, and adds a bright beautiful sound to the mix.",
-        detailedDesc: `<p>General info: </p>
+        detailedDesc: `<p>An extremely reliant and skilled player, our first trumpet player has experience in all fields of brass. He can create a variety of sound, ranging from bright sound to rip through the quintet to beautiful dark tone! With a deep passion for music, Arvin makes sure to keep the quintet enthusiastic and is a great addition.</p>
                     <br>
                     <p>Extracurriculars (not nessecarily music)</p>
                     <br>
