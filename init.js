@@ -10,9 +10,9 @@ let cards = [
         desc: "Our first trumpet player has an excellent variety of skills in many different brass instruments. He finds and chooses repertoire for the ensemble, generates different ideas, and adds a bright beautiful sound to the mix.",
         detailedDesc: `<p>An extremely reliant and skilled player, our first trumpet player has experience in all fields of brass. He can create a variety of sound, ranging from bright sound to rip through the quintet to beautiful dark tone! With a deep passion for music, Arvin makes sure to keep the quintet enthusiastic and is a great addition.</p>
                     <br>
-                    <p>Extracurriculars (not nessecarily music)</p>
+                    <p>Arvin is involved in many music-related extracurriculars aside from Brassquake. He is a trumpet player in the Toronto Youth Wind Orchestra, plays in a handful of wind bands and jazz combos, and has a Persian ensemble called "Maze". Arvin also works out and goes to the gym, lifting weights and keeping fit.</p>
                     <br>
-                    <p>Musical journey: </p>
+                    <p>Starting piano at age 7, Arvin was quickly pulled in by the world of music. He played piano for around 3 years, and then played the flute during grades 6 to 8. In the middle of grade 8, he explored a multitude of brass instruments such as the tuba, eventually settling on the trumpet.</p>
                     <br>
                     <p><strong>"To be the best, you must first believe you're the best"</strong></p>`
     },
