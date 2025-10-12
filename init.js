@@ -136,16 +136,16 @@ let performances = [
                 file: "images/AlumniPerformance1.jpg"
             },
             {
-                title: "In The Frame: Arwen, Nancy & Brian!",
-                file: "images/AlumniPerformance2.jpg"
-            },
-            {
                 title: "In The Frame: Arvin!",
                 file: "images/IMG_9987.JPG"
             },
             {
                 title: "In The Frame: Brian!",
                 file: "images/IMG_0081.JPG"
+            },
+            {
+                title: "In The Frame: Arwen, Nancy & Brian!",
+                file: "images/AlumniPerformance2.jpg"
             },
             {
                 title: "In The Frame: Alex!",
