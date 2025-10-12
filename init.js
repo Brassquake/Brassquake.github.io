@@ -128,6 +128,10 @@ let performances = [
         status: "past",
         photos: [
             {
+                title: "The Brassquake Team Taking A Fun Break!",
+                file: "images/1NEW-IMG_0090.JPG"
+            },
+            {
                 title: "In The Frame: Alex & Arwen!",
                 file: "images/AlumniPerformance1.jpg"
             },
@@ -147,10 +151,6 @@ let performances = [
                 title: "In The Frame: Alex!",
                 file: "images/IMG_9986.JPG"
             },
-            {
-                title: "The Brassquake Team Taking A Fun Break!",
-                file: "images/1NEW-IMG_0090.JPG"
-            }
         ]
     },
 ];
