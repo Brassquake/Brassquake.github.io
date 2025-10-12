@@ -130,6 +130,10 @@ let performances = [
             {
                 title: "In The Frame: Brian!",
                 file: "images/IMG_0081.JPG"
+            },
+            {
+                title: "In The Frame: Alex!",
+                file: "images/IMG_9986.JPG"
             }
         ]
     },
