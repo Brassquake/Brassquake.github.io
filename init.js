@@ -88,7 +88,13 @@ let performances = [
         location: "Dr. G.W. Williams Secondary School",
         summary: "Open mic performance! It's free for all audiences, so make sure to come by and watch Brassquake play some fun repertoire!",
         details: "Open mic performance! It's free for all audiences, so make sure to come by and watch Brassquake play some fun repertoire! Yes indeed you should!",
-        status: "upcoming"
+        status: "upcoming",
+        photos: [
+            {
+                title: "⭐⭐",
+                file: "images/performance-2.jpg"
+            },
+        ]
     },  
     {
         date: "July 26th, 2025",
