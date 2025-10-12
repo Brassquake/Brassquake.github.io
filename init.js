@@ -26,7 +26,7 @@ let cards = [
                 <br>
                 <p>Alex loves to draw and create fun animations in her free time. She also enjoys video games, playing Minecraft to pass the time. A great photographer and video editor as well, and on top of it all, Alex has a sharp mind, being an avid escape room enjoyer.</p>
                 <br>
-                <p>Musical journey:</p>
+                <p>In grade 6, Alex had a strong liking for percussion instruments, and really wanted to play percussion. However, she changed her choice and has been playing trumpet since grade 6. She did not explore any other instruments, as she had lots of love for the trumpet.</p>
                 <br>
                 <p><strong>"✨Thousands of light houses stuck at the end of the sky✨" - River Wyles From To The Moon</strong></p>`
     },
@@ -36,7 +36,7 @@ let cards = [
         instrument: "French Horn",
         icon: "📯",
         desc: "Bridging the gap between the high and low voices, our french horn player has wonderful harmonies to show. Arwen brings lots of energy to the quintet with her vibrant and outgoing personality, always lightening the mood.",
-        detailedDesc: `<p>Playing the most difficult brass instrument of them all, Arwen displays wonderful skill in the French Horn. </p>
+        detailedDesc: `<p>Playing the most difficult brass instrument of them all, Arwen displays wonderful skill playing the French Horn. Even though she has limited experience with only one year of playing, Arwen quickly surpassed all of her peers through sheer determination and practice. She is a great addition to the ensemble and always nails her parts.</p>
                 <br>
                 <p>Extracurriculars Soft ball and football</p>
                 <br>
