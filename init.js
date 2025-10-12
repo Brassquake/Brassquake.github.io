@@ -128,7 +128,9 @@ let performances = [
                 file: "images/IMG_9987.JPG"
             },
             {
-                
+                title: "In The Frame: Brian!",
+                file: "images/IMG_0081.JPG"
+            }
         ]
     },
 ];
