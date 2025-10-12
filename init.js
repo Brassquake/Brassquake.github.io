@@ -94,6 +94,12 @@ let performances = [
                 title: "⭐⭐",
                 file: "images/performance-2.jpg"
             },
+        ],
+        videos: [
+            {
+                title: "Bolero - David Marlatt",
+                url: "https://www.youtube.com/embed/Cti8e4lQblw?si=6z6wYIRd0vkanALu"
+            },
         ]
     },  
     {
