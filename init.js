@@ -122,7 +122,13 @@ let performances = [
             {
                 title: "In The Frame: Arwen, Nancy & Brian!",
                 file: "images/AlumniPerformance2.jpg"
-            }
+            },
+            {
+                title: "In The Frame: Arvin!",
+                file: "images/IMG_9987.JPG"
+            },
+            {
+                
         ]
     },
 ];
