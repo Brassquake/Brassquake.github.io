@@ -52,9 +52,9 @@ let cards = [
         desc: "Adding unique textures to the sound, our trombone player never fails to deliver each parts when needed. ",
         detailedDesc: `<p> Known for being creative and special from his friends in a good and bad way, although he enjoys music a lot, our trombone player does have a life that isn't compleatly focused in music. He does taekwondo has a hobby and is also chronically online.  </p>
                 <br>
-                <p> He is the second trombone in a Trombone quartet called "Trombone Trombone Trombone Trombone" </p> 
+                <p> He is the second trombone in a Trombone quartet called "Trombone Trombone Trombone Trombone." </p> 
                 <br>
-                <p>Musical journey:Classically trained piano student for 10 years. Trombone player for ~3 years</p>
+                <p>Musical journey:Classically trained piano student for 10 years. Trombone player for ~3 years.</p>
                 <br>
                 <p><strong>"5th position is not real"</strong></p>`
         
