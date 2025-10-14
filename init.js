@@ -38,9 +38,9 @@ let cards = [
         desc: "Bridging the gap between the high and low voices, our french horn player has wonderful harmonies to show. Arwen brings lots of energy to the quintet with her vibrant and outgoing personality, always lightening the mood.",
         detailedDesc: `<p>Playing the most difficult brass instrument of them all, Arwen displays wonderful skill playing the French Horn. Even though she has limited experience with only one year of playing, Arwen quickly surpassed all of her peers through sheer determination and practice. She is a great addition to the ensemble and always nails her parts.</p>
                 <br>
-                <p>Extracurriculars Soft ball and football</p>
+                <p>Arwen loves sports! Outside of the quintet and her musical time, Arwen plays sports such as soft ball and football. She is extremely passionate about these sports and also extermely talented, winning many gold medals and MVP awards in her games.</p>
                 <br>
-                <p>Musical journey: 7 years of piano, dabbled in the flute and trumpet</p>
+                <p>Starting her musical journey with the piano, Arwen played piano for 7 years before giving wind instruments a try. She then gave some time to both woodwind and brass instruments, spending time with the flute and the trumpet. She eventually found her love for the French Horn and has been playing it ever since.</p>
                 <br>
                 <p><strong>"If you can't beat them, eat them"</strong></p>`
     },
@@ -49,10 +49,10 @@ let cards = [
         img: "BrianImage.JPG",
         instrument: "Trombone",
         icon: "🎺",
-        desc: "Adding unique textures to the sound, our trombone player never fails to deliver each parts when needed. ",
-        detailedDesc: `<p> Known for being creative and special from his friends in a good and bad way, although he enjoys music a lot, our trombone player does have a life that isn't compleatly focused in music. He does taekwondo has a hobby and is also chronically online.  </p>
+        desc: "Adding a unique sound and texture to the band, Brian always nails his parts, all while giving the band a great time through his high energy and funny personality. Always adds something interesting to the band!",
+        detailedDesc: `<p>Known for being creative and special from his friends in a good and bad way, although he enjoys music a lot, our trombone player does have a life that isn't compleatly focused in music. He does taekwondo has a hobby and is also chronically online.  </p>
                 <br>
-                <p> He is the second trombone in a Trombone quartet called "Trombone Trombone Trombone Trombone." </p> 
+                <p> He is the second trombone in a Trombone quartet called "Trombone Trombone Trombone Trombone", a trombone quartet from Dr. G.W. Williams Secondary School. </p> 
                 <br>
                 <p>Musical journey:Classically trained piano student for 10 years. Trombone player for ~3 years.</p>
                 <br>
@@ -65,7 +65,7 @@ let cards = [
         instrument: "Tuba",
         icon: "🎺",
         desc: "The foundation of Brassquake! Our tuba player provides the deep, resonant bass that makes our music truly earthquake-worthy.",
-        detailedDesc: `<p>The foundation of Brassquake! Our tuba player provides the deep, resonant bass lines that give our quintet its solid foundation. Despite being the largest and lowest instrument, the tuba can be surprisingly agile and expressive in the right hands.</p>
+        detailedDesc: `<p>Small girl play big instrument.</p>
                     <br>
                 <p>Extracurriculars (not nessecarily music)</p>
                 <br>
