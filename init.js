@@ -64,7 +64,7 @@ let cards = [
         img: "NancyImage.JPG",
         instrument: "Tuba",
         icon: "🎺",
-        desc: "The foundation of Brassquake! Our tuba player provides the deep, resonant bass that makes our music truly earthquake-worthy.",
+        desc: "Providing a  big, tonal, and a great bass sound to Brassquake, Nancy never fails to impress the audience and the band! ",
         detailedDesc: `<p>Small girl play big instrument.</p>
                     <br>
                 <p>Extracurriculars (not nessecarily music)</p>
