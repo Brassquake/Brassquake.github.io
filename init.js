@@ -65,11 +65,11 @@ let cards = [
         instrument: "Tuba",
         icon: "🎺",
         desc: "Providing a  big, tonal, and a great bass sound to Brassquake, Nancy never fails to impress the audience and the band! She consistently practices her parts, and creates a positive and welcoming environment for the band!",
-        detailedDesc: `<p>Small girl play big instrument.</p>
+        detailedDesc: `<p>Even though nancy is quite small herself, she plays the biggest instrument - the tuba! And as a cherry on top, she is phenomenal at her instrument, always creating a nice stable bass for the rest of the ensemble to sit on top of. Also an extremely kind individual, Nancy always adds laughter to the quintet!</p>
                 <br>
-                <p>Extracurriculars (not nessecarily music)</p>
+                <p>Extracurriculars</p>
                 <br>
-                <p>Musical journey:</p>
+                <p>Musical journey</p>
                 <br>
                 <p><strong>A quote from them:</strong></p>`
     }
