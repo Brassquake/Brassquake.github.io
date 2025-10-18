@@ -50,11 +50,11 @@ let cards = [
         instrument: "Trombone",
         icon: "🎺",
         desc: "Adding a unique sound and texture to the band, Brian always nails his parts, all while giving the band a great time through his high energy and funny personality. Always adds something interesting to the band!",
-        detailedDesc: `<p>Known for being creative and special from his friends in a good and bad way, although he enjoys music a lot, our trombone player does have a life that isn't compleatly focused in music. He does taekwondo has a hobby and is also chronically online.  </p>
+        detailedDesc: `<p>Known for being creative and special from his friends in a good and bad way. Brian generates many great ideas for repertoire, and helps arrange lots of it as well, as he has a great sense of pitch. Adding a very interesting personality to the band, everyone loves Brian!</p>
                 <br>
-                <p> He is the second trombone in a Trombone quartet called "Trombone Trombone Trombone Trombone", a trombone quartet from Dr. G.W. Williams Secondary School. </p> 
+                <p> He is the second trombone in an ensemble called "Trombone Trombone Trombone Trombone", a trombone quartet from Dr. G.W. Williams Secondary School. Although he enjoys music a lot, our trombone player does have a life that isn't compleatly focused in music. He does taekwondo has a hobby and is also chronically online.</p> 
                 <br>
-                <p>Musical journey:Classically trained piano student for 10 years. Trombone player for ~3 years.</p>
+                <p>Developing his musicality from a young age, Brian is a classically trained pianist, and has been playing piano for over 10 years. He entered the world of wind instruments with great backgroud experience, helping him excel at his instrument. Brian has now been playing trombone for about 3 years, and plans on continuing his playing.</p>
                 <br>
                 <p><strong>"5th position is not real"</strong></p>`
         
