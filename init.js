@@ -88,7 +88,7 @@ let performances = [
         location: "Dr. G.W. Williams Secondary School",
         summary: "Open mic performance! The first perfomance of the 2025-26 school year!",
         details: "Hosted by Dr. G.W. Williams, this open mic is free for all audiences",
-        status: "upcoming",
+        status: "past",
         photos: [
             {
                 title: "⭐⭐",
